@@ -1,0 +1,13 @@
+*.md linguist-detectable
+*.markdown linguist-detectable
+*.mdown linguist-detectable
+*.mdwn linguist-detectable
+*.mdx linguist-detectable
+*.mkd linguist-detectable
+*.mkdn linguist-detectable
+*.mkdown linguist-detectable
+*.ronn linguist-detectable
+*.scd linguist-detectable
+*.workbook linguist-detectable
+*.yml linguist-detectable
+*.yaml linguist-detectable

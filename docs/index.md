@@ -1,11 +1,9 @@
 ---
 title: Home
-summary: Konichiwa, myself Minato Namikaze, Konohagakure Yondaime Hokage, I try my best to do every work as a Hokage!
 hide:
   - navigation
   - toc
 ---
-<meta name="referrer" content="no-referrer">
 
 # **Minato Namikaze**
 

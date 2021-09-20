@@ -1,8 +1,3 @@
---- 
-summary: Konichiwa, myself Minato Namikaze, Konohagakure Yondaime Hokage, I try my best to do every work as a Hokage! 
----
-
-<meta name="referrer" content="no-referrer"> 
 <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
 # Partners

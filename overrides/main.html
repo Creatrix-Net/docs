@@ -1,4 +1,58 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block site_meta %}
+<meta charset="utf-8">
+<meta name="referrer" content="no-referrer">
+<meta property="og:title" content="{{ config.site_name }}">
+<meta property="og:type" content="Website">
+<meta property="og:description" content="{{ config.site_description }}">
+<meta property="og:image" itemprop="image" content="">
+<meta property="og:image" content="">
+<meta property="og:image:type" content="image/png" />
+<meta property="og:url" content="">
+<meta property="og:locale" content="{{ lang.t('language') }}" />
+<meta property="og:locale" content="{{ lang.t('language') }}" />
+
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="{{ config.theme.favicon | url }}">
+<meta name="twitter:card" content="">
+
+<meta property="og:site_name" content="">
+<meta name="twitter:image:alt" content="">
+<meta property="og:image:alt" content="">
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="{{ config.site_description }}">
+<meta itemprop="image" content="">
+<meta name="author" content="{{ config.site_author }}">
+<meta name="copyright" content="{{ config.site_author }}">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="">
+
+<meta name="distribution" content="global">
+<meta name="revisit-after" content="1 day">
+<meta name="theme-color" content="#{{ config.theme.color_theme }}">
+
+<meta name="viewport" content="width=device-width,initial-scale=1"> {% if page and page.meta and page.meta.description %}
+<meta name="description" content="{{ page.meta.description }}"> {% elif config.site_description %}
+<meta name="description" content="{{ config.site_description }}"> {% endif %} {% if page and page.meta and page.meta.keywords %}
+<meta name="keywords" content="{{ page.meta.keywords }}"> {% elif config.site_keywords %}
+<meta name="keywords" content="{{ config.site_keywords }}"> {% endif %} {% if page and page.meta and page.meta.author %}
+<meta name="author" content="{{ page.meta.author }}"> {% elif config.site_author %}
+<meta name="author" content="{{ config.site_author }}"> {% endif %} {% if page.canonical_url %}
+<link rel="canonical" href="{{ page.canonical_url }}"> {% endif %}
+<link rel="icon" href="{{ config.theme.favicon | url }}">
+<meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-7.2.2"> {% endblock %} {% block announce %}
+<style>
+    .twitter {
+        color: #1DA1F2;
+    }
+</style><strong><i>v2</i></strong> of <b style="color: #f79d00;">Minato Namikaze</b> will be releasing soon! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a style="color: #09d6dd;" href="https://github.com/The-4th-Hokage/yondaime-hokage/projects/1"
+    target="_blank">Stay tuned</a>&nbsp;
+<span class="twemoji twitter">
+    {% include ".icons/fontawesome/brands/twitter.svg" %}
+    </span>
+
 <script src="https://xnqtmjy63llr.statuspage.io/embed/script.js"></script>
 <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
     new Crate({
@@ -7,13 +61,4 @@
         location: ['bottom', 'left'],
     })
 </script>
-{% block announce %}
-<style>
-    .twitter {
-        color: #1DA1F2;
-    }
-</style><strong><i>v2</i></strong> of <b style="color: #ddbd05;">Minato Namikaze</b> will be releasing soon! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a style="color: #09d6dd;" href="https://github.com/The-4th-Hokage/yondaime-hokage/projects/1"
-    target="_blank">Stay tuned</a>&nbsp;
-<span class="twemoji twitter">
-    {% include ".icons/fontawesome/brands/twitter.svg" %}
-    </span>{% endblock %}
+{% endblock %}

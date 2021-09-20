@@ -5,8 +5,6 @@ hide:
   - toc
 ---
 
-<meta name="referrer" content="no-referrer">
-
 # Well, Here is the Privacy Policy :)
 
 #### Well well well, Nothing is stored! Really nothing is stored! All is based on [**internal cache**](https://discord.com/developers/docs/topics/gateway) provided by Discord!

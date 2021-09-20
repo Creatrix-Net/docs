@@ -1,6 +1,7 @@
 site_name: Minato Namikaze
 theme:
     name: material
+    color_theme: f79d00
     custom_dir: overrides
     logo: assets/images/logo.png
     favicon: assets/images/favicon.ico
@@ -45,11 +46,14 @@ plugins:
         type: date
         fallback_to_build_date: true
         enable_creation_date: true
+    - macros
     
 repo_url: https://github.com/The-4th-Hokage/yondaime-hokage
 edit_uri: https://github.com/The-4th-Hokage/The-4th-Hokage.github.io/tree/master/docs
 site_author: Miku Chan
 repo_name: Source Code
+site_description: Konichiwa 👋, myself Minato Namikaze, Konohagakure Yondaime Hokage. I do every work of a Hokage in a swift and clean way ⚡
+site_keywords: Minato Namikaze, discord bot, minato, namikaze, discord.py,best discord bot, best anime bot, anime, bot, discord bot
 
 markdown_extensions:
   - attr_list
@@ -68,6 +72,10 @@ extra:
   analytics:
     provider: google
     property: G-K0T92G87GZ
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/The-4th-Hokage
+      name: Github Organization
 
 nav:
     - Home: 'index.md'
