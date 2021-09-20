@@ -46,7 +46,8 @@ plugins:
         type: date
         fallback_to_build_date: true
         enable_creation_date: true
-    - macros
+    - macros:
+        module_name: commands  
     
 repo_url: https://github.com/The-4th-Hokage/yondaime-hokage
 edit_uri: https://github.com/The-4th-Hokage/The-4th-Hokage.github.io/tree/master/docs

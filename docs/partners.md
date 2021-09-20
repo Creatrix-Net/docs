@@ -6,19 +6,20 @@
 Hi these are our partners, please go and check these amazing sites out!
 ```
 
-- ## __Infinity Bot List__
+{% for i in partners %}
+- ## __{{ i.name|capitalize }}__
 <table>
   <tr>
-    <td><img src="https://media.discordapp.net/attachments/874376493160087642/874735796698112020/infinitybotlist.png" loading="lazy"></td>
+    <td><img src="{{ i.logo }}" loading="lazy"></td>
     <td>
-    <a title="Infinity Botlist" href="https://infinitybotlist.com/" target="_blank"><h1><strong>Infinity Bot List</strong></h1></a>
-    <h3>The future of Discord Bot Listing Services,<br/>
-    We make it easier for you to advertise and grow using our vanity link’s, widget’s and more.</h3>
-    <a title="Infinity Botlist Discord" href="https://infinitybotlist.com/discord" target="_blank"><i class='bx bxl-discord' style="font-size: 40px;"></i></a>
-    <a title="Infinity Botlist Website" href="https://infinitybotlist.com/" target="_blank"><i class='bx bx-globe' style="font-size: 40px;"></i></a>
+    <a title="{{ i.name|capitalize }}" href="{{ i.website }}" target="_blank"><h1><strong>{{ i.name|capitalize }}</strong></h1></a>
+    <h3>{{ i.description|format_description }}</h3>
+    <a title="{{ i.name|capitalize }} Discord" href="{{ i.discord }}" target="_blank"><i class='bx bxl-discord' style="font-size: 40px;"></i></a>
+    <a title="{{ i.name|capitalize }} Website" href="{{ i.website }}" target="_blank"><i class='bx bx-globe' style="font-size: 40px;"></i></a>
     </td>
   </tr>
 </table>
+{% endfor %}
 
 
 
