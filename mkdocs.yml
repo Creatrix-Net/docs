@@ -1,4 +1,3 @@
-site_name: Minato Namikaze
 theme:
     name: material
     color_theme: f79d00
@@ -51,6 +50,7 @@ plugins:
     
 repo_url: https://github.com/The-4th-Hokage/yondaime-hokage
 edit_uri: https://github.com/The-4th-Hokage/The-4th-Hokage.github.io/tree/master/docs
+site_name: Minato Namikaze
 site_author: Miku Chan
 repo_name: Source Code
 site_description: Konichiwa 👋, myself Minato Namikaze, Konohagakure Yondaime Hokage. I do every work of a Hokage in a swift and clean way ⚡

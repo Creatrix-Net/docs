@@ -4,30 +4,30 @@
 <meta property="og:title" content="{{ config.site_name }}">
 <meta property="og:type" content="Website">
 <meta property="og:description" content="{{ config.site_description }}">
-<meta property="og:image" itemprop="image" content="">
-<meta property="og:image" content="">
+<meta property="og:image" itemprop="image" content="{{ config.site_description }}">
+<meta property="og:image" content="{{ config.theme.favicon | url }}">
 <meta property="og:image:type" content="image/png" />
-<meta property="og:url" content="">
+<meta property="og:url" content="{{ page.canonical_url }}">
 <meta property="og:locale" content="{{ lang.t('language') }}" />
 <meta property="og:locale" content="{{ lang.t('language') }}" />
 
-<meta name="twitter:title" content="">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="{{ config.site_name }}">
+<meta name="twitter:description" content="{{ config.site_description }}">
 <meta name="twitter:image" content="{{ config.theme.favicon | url }}">
-<meta name="twitter:card" content="">
+<meta name="twitter:card" content="{{ config.site_description }}">
 
-<meta property="og:site_name" content="">
-<meta name="twitter:image:alt" content="">
-<meta property="og:image:alt" content="">
+<meta property="og:site_name" content="{{ config.site_name }}">
+<meta name="twitter:image:alt" content="{{ config.site_name }} Logo">
+<meta property="og:image:alt" content="{{ config.site_name }} Logo">
 
-<meta itemprop="name" content="">
+<meta itemprop="name" content="{{ config.site_name }}">
 <meta itemprop="description" content="{{ config.site_description }}">
-<meta itemprop="image" content="">
+<meta itemprop="image" content="{{ config.site_description }}">
 <meta name="author" content="{{ config.site_author }}">
 <meta name="copyright" content="{{ config.site_author }}">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="">
+<meta name="apple-mobile-web-app-status-bar-style" content="#{{ config.theme.color_theme }}">
+<meta name="apple-mobile-web-app-title" content="{{ config.site_name }}">
 
 <meta name="distribution" content="global">
 <meta name="revisit-after" content="1 day">
