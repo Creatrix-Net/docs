@@ -46,7 +46,7 @@ plugins:
         fallback_to_build_date: true
         enable_creation_date: true
     - macros:
-        module_name: commands  
+        module_name: commands_and_partners  
     
 repo_url: https://github.com/The-4th-Hokage/yondaime-hokage
 edit_uri: https://github.com/The-4th-Hokage/The-4th-Hokage.github.io/tree/master/docs
@@ -55,6 +55,7 @@ site_author: Miku Chan
 repo_name: Source Code
 site_description: Konichiwa 👋, myself Minato Namikaze, Konohagakure Yondaime Hokage. I do every work of a Hokage in a swift and clean way ⚡
 site_keywords: Minato Namikaze, discord bot, minato, namikaze, discord.py,best discord bot, best anime bot, anime, bot, discord bot
+bot_discord_id: 779559821162315787
 
 markdown_extensions:
   - attr_list
@@ -81,6 +82,7 @@ extra:
 nav:
     - Home: 'index.md'
     - Privacy Policy: 'privacy_policy.md'
+    - Commands: 'commands.md'
     - Partners: 'partners.md'
 
 
