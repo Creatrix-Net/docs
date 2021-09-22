@@ -8,7 +8,7 @@ Hi these are our partners, please go and check these amazing sites out!
 
 {% for i in partners %}
 - ## __{{ i.name|capitalize }}__
-<table>
+<table {% if i.shadow %}style="box-shadow: 5px 5px 5px 5px {{i.shadow}};"{% endif %}>
   <tr>
     <td><img src="{{ i.logo }}" loading="lazy"></td>
     <td>
