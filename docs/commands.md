@@ -1,3 +1,7 @@
+```python
+These are the commands list, You can check them out! :)
+``` 
+***
 {% for i in commands %}
 - ## __{{i.name}}__
 
@@ -12,7 +16,7 @@
   <tr>
     <td>{{j.cmd_name}}</td>
     <td>{{j.description}}</td>
-    <td>{{j.examples|slice(0)}}</td>
+    <td>{{j.examples|slice(1)}}</td>
     <td>{% if j.vote_locked %}✔️{% else %}❌{% endif %}</td>
   </tr>
   {% endfor %}

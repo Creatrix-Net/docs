@@ -53,9 +53,10 @@ edit_uri: https://github.com/The-4th-Hokage/The-4th-Hokage.github.io/tree/master
 site_name: Minato Namikaze
 site_author: Miku Chan
 repo_name: Source Code
-site_description: Konichiwa 👋, myself Minato Namikaze, Konohagakure Yondaime Hokage. I do every work of a Hokage in a swift and clean way ⚡
+site_description: Konichiwa &#128075;, myself Minato Namikaze, Konohagakure Yondaime Hokage. I do every work of a Hokage in a swift and clean way &#9889;
 site_keywords: Minato Namikaze, discord bot, minato, namikaze, discord.py,best discord bot, best anime bot, anime, bot, discord bot
 bot_discord_id: 779559821162315787
+copyright: This is fan-made bot and we are not associated with Tokyo TV Corporation :)
 
 markdown_extensions:
   - attr_list
@@ -66,6 +67,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
 
 extra:
   version:
@@ -78,6 +82,36 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/The-4th-Hokage
       name: Github Organization
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/S8kzbBVN8b
+      name: Discord Support Server
+    - icon: topgg
+      link: https://top.gg/bot/779559821162315787
+      name: Top.gg Link
+    - icon: discordbotlist
+      link: https://discordbotlist.com/bots/minato-namikaze
+      name: Discordbotlist Link
+    - icon: discordlistspace
+      link: https://discordlist.space/bot/779559821162315787
+      name: DiscordListSpace Link
+    - icon: botsfordiscord
+      link: https://discords.com/bots/bot/779559821162315787
+      name: Bots For Discord Link
+    - icon: discordboats
+      link: https://discord.boats/bot/779559821162315787
+      name: Discord Boats Link
+    - icon: bladebotlist
+      link: https://bladebotlist.xyz/bot/779559821162315787
+      name: BladeBotList Link
+    - icon: fateslist
+      link: https://fateslist.xyz/bot/779559821162315787
+      name: FatesList Link
+    - icon: voidbots
+      link: https://voidbots.net/bot/779559821162315787/
+      name: Void Bot List Link
+    - icon: infinity
+      link: https://infinitybotlist.com/bots/779559821162315787
+      name: Infinity Bot List Link
 
 nav:
     - Home: 'index.md'
