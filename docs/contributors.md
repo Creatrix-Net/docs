@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Our Contributors
 
 ## These are our amazing contributors ❤️ 
