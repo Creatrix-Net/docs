@@ -12,5 +12,12 @@
         "website": "https://bladebotlist.xyz/",
         "logo": "https://cdn.discordapp.com/attachments/850475455890587658/889515083770757160/logo.png",
         "shadow": "#002963"
+    },
+    "AntiRaid": {
+        "description": "AntiRaid The best fully free moderation and always improving moderation bot with Dashboard!",
+        "discord": "https://antiraid.xyz/discord",
+        "website": "https://antiraid.xyz/",
+        "logo": "https://cdn.discordapp.com/attachments/859373092702650390/896791690038358037/AR_LOGO_NOBG.png",
+        "shadow": "#323232"
     }
 }
