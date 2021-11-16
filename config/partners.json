@@ -3,22 +3,33 @@
         "description": "The future of Discord Bot Listing Services, \nWe make it easier for you to advertise and grow using our vanity link's, widget's and more.",
         "discord": "https://infinitybotlist.com/discord",
         "website": "https://infinitybotlist.com/",
-        "logo": "https://media.discordapp.net/attachments/874376493160087642/874735796698112020/infinitybotlist.png",
+        "logo": "https://media.discordapp.net/attachments/874376493160087642/874735796698112020/infinitybotlist.png?size=512",
         "shadow": "#9966ff"
     },
     "BladeBotList": {
         "description": "We are a website existing since 2019 offering original Discord Bots created by developers whether they are independent or belonging to the largest companies!",
         "discord": "https://discord.gg/PpQUZCF3H2",
         "website": "https://bladebotlist.xyz/",
-        "logo": "https://cdn.discordapp.com/attachments/850475455890587658/889515083770757160/logo.png",
+        "logo": "https://cdn.discordapp.com/attachments/850475455890587658/889515083770757160/logo.png?size=512",
         "shadow": "#002963"
     },
     "AntiRaid": {
         "description": "AntiRaid The best fully free moderation and always improving moderation bot with Dashboard!",
         "discord": "https://antiraid.xyz/discord",
         "website": "https://antiraid.xyz/",
-        "logo": "https://cdn.discordapp.com/attachments/859373092702650390/896791690038358037/AR_LOGO_NOBG.png",
         "invite": "https://antiraid.xyz/invite",
+        "bot_id": 858308969998974987,
+        "bot": true,
         "shadow": "#323232"
+    },
+    "Discord Home": {
+        "description": "Discord Home is a nice bot that has RolePlay, Backup, Fun, Moderation & Info commands! We have a total of 63 commands! Of which 55 are usable for everyone (with the right perms)! Do you want to try them all out? Invite Discord Home now!",
+        "discord": "https://discordhome.tk/support",
+        "website": "https://discordhome.tk",
+        "invite": "https://discordhome.tk/invite",
+        "shadow": "#5865F2",
+        "bot_id": 839798877595107329,
+        "bot": true
     }
+
 }

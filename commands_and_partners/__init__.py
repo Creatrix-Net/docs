@@ -1,7 +1,9 @@
 import json
 
 from pathlib import Path
-import os, requests
+import os, requests, ast, random
+
+import functools
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -11,9 +13,33 @@ try:
 except:
     pass
 
+def discord_api_req(
+    path: str,
+    method: str = "post" or "get",
+    data: dict = None,
+    content_type: str = "application/json",
+):
+    base_api = "https://discord.com/api"
+    headers = {
+        "User-Agent": "Minato Namikaze Website",
+        "X-Ratelimit-Precision": "millisecond",
+        "Authorization": f"Bot {os.environ.get('BOT_TOKEN')}",
+        "Content-Type": content_type,
+    }
+    req = requests.request(url=base_api + path, headers=headers, method=method.upper(), data=data)
+    content = req.json()
+    return content
+
+@functools.lru_cache
+def get_the_user_image_url(bot_id: int) -> str:
+    users_data = discord_api_req(f'/users/{bot_id}','get')
+    return f'https://cdn.discordapp.com/avatars/{bot_id}/{users_data.get("avatar")}.png?size=512'
+
 class Partners:
     def __init__(self, json_dict: dict):
         for i in json_dict:
+            if json_dict.get("bot"):
+                setattr(self, "profile_logo", get_the_user_image_url(json_dict.get("bot_id")))
             setattr(self, i, json_dict[i])
 
 class Command:
@@ -30,6 +56,7 @@ class CommandGroups:
 def define_env(env):
     global BASE_DIR
     
+    @functools.lru_cache
     def partners(*args, **kwargs):
         file_path = BASE_DIR / os.path.join('config', 'partners.json')
         with open(file_path, 'r') as f:
@@ -37,10 +64,13 @@ def define_env(env):
         def add_data(name: str, dict_data: dict):
             dict_data.update({'name': name.capitalize()})
             return Partners(dict_data)
-        return [ add_data(i, data[i]) for i in data ]
+        random_data = [ add_data(i, data[i]) for i in data ]
+        random.shuffle(random_data)
+        return random_data
     
     env.variables['partners'] = partners()
     
+    @functools.lru_cache
     def commands_groups():
         req = requests.get(
             'https://fateslist.xyz/api/v2/bots/779559821162315787/commands',
@@ -51,17 +81,19 @@ def define_env(env):
     
     env.variables['commands'] = commands_groups()
     
-
+    @functools.lru_cache
     @env.filter
     def format_description(x):
         '''Formats the bot's markdown description to HTML one'''
         return x.replace('\n', '<br/>')
 
+    @functools.lru_cache
     @env.filter
     def reverse(x):
         "Reverse a string (and uppercase)"
         return x.upper()[::-1]
-    
+
+    @functools.lru_cache    
     @env.filter
     def capitalize(x):
         "Reverse a string (and uppercase)"
