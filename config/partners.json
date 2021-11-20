@@ -30,6 +30,14 @@
         "shadow": "#5865F2",
         "bot_id": 839798877595107329,
         "bot": true
+    },
+    "Hibiki": {
+        "description": "Tired of mee6 or Dyno? \n\n\uD83E\uDD16 We have a bot for you! \n\nWe have features like; \n\uD83C\uDFB5Lag Free Music,\n\uD83D\uDD34Reaction Roles and a lot more!!\n\nWe have low ping with great uptime,new features are always being introduced and old ones are constantly being improved!\n\n \u2139\uFE0F Invite Hibiki today!",
+        "discord": "https://discord.gg/t3JW5Vth92",
+        "invite": "https://discord.com/api/oauth2/authorize?client_id=762976674659696660&permissions=536870911991&scope=applications.commands%20bot",
+        "shadow": "#e2cfc6",
+        "bot_id": 762976674659696660,
+        "bot": true
     }
 
 }
