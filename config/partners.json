@@ -38,6 +38,13 @@
         "shadow": "#e2cfc6",
         "bot_id": 762976674659696660,
         "bot": true
+    },
+    "Review Bots": {
+        "description": "The Number One Discord Bot Review Service. Experiencing some Issues with your Favourite Bots? Search our vast list and Let the Dev Team know!",
+        "discord": "https://reviewbots.xyz/discord ",
+        "website": "https://reviewbots.xyz/",
+        "shadow": "#7289DA",
+        "logo": "https://reviewbots.xyz/static/assets/imgs/rb_new.png"
     }
 
 }
