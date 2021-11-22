@@ -47,6 +47,9 @@ plugins:
         enable_creation_date: true
     - macros:
         module_name: commands_and_partners  
+    - redirects:
+        redirect_maps:
+            'whats_new.html': 'https://r3---sn-cvh7knle.googlevideo.com/videoplayback?expire=1637596039&ei=J2ebYbfiKZPAx_AP-eqkmAE&ip=45.201.205.134&id=o-AL2wg_UcbXtNJsRaF3TB1RRa9s4z1M1gif1XfVs6m6lX&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video%2Fmp4&ns=MOWbkXUJWY7ocbs-uYeLKj8G&gir=yes&clen=34921413&ratebypass=yes&dur=601.489&lmt=1631999545286420&fexp=24001373,24007246&c=WEB&txp=5510222&n=EtOaTM1vYLbVtqjw36&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRgIhAJAKXw9DHFy1-Qqo2XabM8YQXe27j82CB8ahDgXsKuDmAiEA3CqQfNWB2JE__L0Av1Sx4i6w3echMdSiwuRtiqEi5ag%3D&rm=sn-v2xooxuj5hcvqp5-2ois7r,sn-nposy7s&req_id=57005fa5af2ca3ee&redirect_counter=2&cms_redirect=yes&ipbypass=yes&mh=PV&mip=45.112.68.212&mm=30&mn=sn-cvh7knle&ms=nxu&mt=1637574041&mv=m&mvi=3&pl=24&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIhANJYapW2cg7oIEnVpGQ8K5Hp894WviZ2f0GfyMct4cm5AiAcj1dR054un-0KvkUZQ8m-4LYbRiRAXSK9NV4QWlPruA%3D%3D'
     
 repo_url: https://github.com/The-4th-Hokage/yondaime-hokage
 edit_uri: https://github.com/The-4th-Hokage/The-4th-Hokage.github.io/tree/master/docs
@@ -125,5 +128,6 @@ nav:
     - Commands: 'commands.md'
     - Contributors: 'contributors.md'
     - Partners: 'partners.md'
+    - What's New: 'whats_new.html'
 
 
