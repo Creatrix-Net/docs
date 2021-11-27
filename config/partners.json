@@ -10,7 +10,7 @@
         "description": "We are a website existing since 2019 offering original Discord Bots created by developers whether they are independent or belonging to the largest companies!",
         "discord": "https://discord.gg/PpQUZCF3H2",
         "website": "https://bladebotlist.xyz/",
-        "logo": "https://cdn.discordapp.com/attachments/850475455890587658/889515083770757160/logo.png?size=512",
+        "logo": "https://bladelist.gg/static/img/logo.svg",
         "shadow": "#002963"
     },
     "AntiRaid": {
@@ -44,7 +44,16 @@
         "discord": "https://reviewbots.xyz/discord ",
         "website": "https://reviewbots.xyz/",
         "shadow": "#7289DA",
-        "logo": "https://reviewbots.xyz/static/assets/imgs/rb_new.png"
+        "logo": "https://reviewbots.xyz/static/assets/imgs/rb_new.png",
+        "twitter": "https://twitter.com/ReviewBots"
+    },
+    "Fates List": {
+        "description": "Ever wanted to grow your bot/server or find the bot that corresponds to your needs? \nWell stop looking further!FatesList is what you need ",
+        "discord": "https://fateslist.xyz/fates/support/invite",
+        "website": "https://fateslist.xyz/",
+        "shadow": "#0afc83",
+        "logo": "https://fateslist.xyz/static/botlisticon.webp",
+        "twitter": "https://twitter.com/FatesList"
     }
 
 }
