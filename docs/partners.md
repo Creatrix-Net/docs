@@ -7,12 +7,12 @@ Hi these are our partners, please go and check these amazing sites out!
 ```
 
 {% for i in partners %}
-- ## __{{ i.name|capitalize }}__
+- ## __{{ i.name }}__
 <table {% if i.shadow %}style="box-shadow: 5px 5px 5px 5px {{i.shadow}};"{% endif %}>
   <tr>
-    <td><img src="{{ i.logo or i.profile_logo }}" loading="lazy" width="350px"></td>
+    <td><img src="{{ i.logo or i.profile_logo }}" loading="lazy" width="350px" {% if not i.no_round %}style="border-radius: 50%;"{% endif %}></td>
     <td>
-    <a title="{{ i.name|capitalize }}" href="{{ i.website }}" target="_blank"><h1><strong>{{ i.name|capitalize }}</strong></h1></a>
+    <a title="{{ i.name }}" href="{{ i.website }}" target="_blank"><h1><strong>{{ i.name }}</strong></h1></a>
     <h3>{{ i.description|format_description }}</h3>
     {% if i.discord %}
     <a title="{{ i.name|capitalize }} Discord" href="{{ i.discord }}" target="_blank"><i class='bx bxl-discord' style="font-size: 40px; color: #5865F2;"></i></a>

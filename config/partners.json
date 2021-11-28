@@ -53,7 +53,16 @@
         "website": "https://fateslist.xyz/",
         "shadow": "#0afc83",
         "logo": "https://fateslist.xyz/static/botlisticon.webp",
-        "twitter": "https://twitter.com/FatesList"
+        "twitter": "https://twitter.com/FatesList",
+        "no_round": true
+    },
+    "AGB": {
+        "description": "AGB; From anime to memes, profiles and general utility, AGB has it all.",
+        "discord": "https://discord.gg/84KEXFDehu",
+        "website": "https://agb-dev.xyz/",
+        "shadow": "#000000",
+        "bot_id": 723726581864071178,
+        "bot": true
     }
 
 }

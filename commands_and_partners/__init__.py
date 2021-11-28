@@ -62,7 +62,7 @@ def define_env(env):
         with open(file_path, 'r') as f:
             data = json.load(f)
         def add_data(name: str, dict_data: dict):
-            dict_data.update({'name': name.capitalize()})
+            dict_data.update({'name': name})
             return Partners(dict_data)
         random_data = [ add_data(i, data[i]) for i in data ]
         random.shuffle(random_data)
