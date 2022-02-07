@@ -3,7 +3,7 @@ version: 2.0
 python:
   version: "3.8"
   install:
-    - requirements: ./requirements.min.txt
+    - requirements: requirements/requirements.min.txt
     - method: pip
       path: .
       extra_requirements:
