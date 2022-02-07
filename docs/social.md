@@ -9,15 +9,15 @@
 
 ### Discord Bot
 * [Support Server](https://discord.gg/g9zQbjE73K)
-* [TopGG](https://top.gg/bot/779559821162315787)
+* [TopGG](https://top.gg/bot/{config.bot_discord_id})
 * [Discord Bot List](https://discordbotlist.com/bots/minato-namikaze)
-* [BOTLIST](https://botlist.space/bot/779559821162315787)
-* [BOTS FOR DISCORD](https://botsfordiscord.com/bot/779559821162315787)
-* [DISCORD BOATS](https://discord.boats/bot/779559821162315787)
-* [DISCORD LABS](https://bots.discordlabs.org/bot/779559821162315787)
-* [VOID BOTS](https://voidbots.net/bot/779559821162315787/)
-* [BLADEBOTLIST](https://bladebotlist.xyz/bot/779559821162315787 )
-* [FATESLIST](https://fateslist.xyz/bot/779559821162315787)
+* [BOTLIST](https://botlist.space/bot/{config.bot_discord_id})
+* [BOTS FOR DISCORD](https://botsfordiscord.com/bot/{config.bot_discord_id})
+* [DISCORD BOATS](https://discord.boats/bot/{config.bot_discord_id})
+* [DISCORD LABS](https://bots.discordlabs.org/bot/{config.bot_discord_id})
+* [VOID BOTS](https://voidbots.net/bot/{config.bot_discord_id}/)
+* [BLADEBOTLIST](https://bladebotlist.xyz/bot/{config.bot_discord_id} )
+* [FATESLIST](https://fateslist.xyz/bot/{config.bot_discord_id})
 
 ***
 

@@ -1,7 +1,7 @@
 import json
 
 from pathlib import Path
-import os, requests, ast, random
+import os, requests, random
 
 import functools
 
@@ -13,6 +13,7 @@ try:
 except:
     pass
 
+@functools.lru_cache
 def discord_api_req(
     path: str,
     method: str = "post" or "get",
@@ -44,12 +45,16 @@ class Partners:
 
 class Command:
     def __init__(self, json_dict: dict):
-        for i in json_dict:
-            setattr(self, i, json_dict[i])
+        self.name = json_dict["name"]
+        self.short_doc = json_dict["short_doc"]
+        self.usage = json_dict.get("usage")
+        self.aliases = json_dict.get("aliases")
+        self.description = json_dict.get("description")
+        self.params = json_dict.get("params")
             
 class CommandGroups:
     def __init__(self, list_dict: list, name: str):
-        self.name = name.capitalize().strip(' ')
+        self.name = name
         self.commands_list = [Command(list_dict[count]) for count,i in enumerate(list_dict)]
 
 
@@ -73,8 +78,7 @@ def define_env(env):
     @functools.lru_cache
     def commands_groups():
         req = requests.get(
-            'https://fateslist.xyz/api/v2/bots/779559821162315787/commands',
-            headers={'Authorization': os.environ.get('FATES_USER_TOKEN')}
+            'https://raw.githubusercontent.com/The-4th-Hokage/yondaime-hokage/master/minato_namikaze/lib/data/commands.json',
         )
         commands_json = req.json()
         return [CommandGroups(commands_json[i], i) for i in commands_json]
