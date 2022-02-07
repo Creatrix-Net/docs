@@ -1,26 +1,60 @@
-```python
-These are the commands list, You can check them out! :)
-``` 
-***
+<style>
+    article{
+        font-family: monospace;
+        padding: 0 3px;
+    }
+</style>
+
+    Use ")help command" for more info on a command.
+    Use ")help category" for more info on a category.
+    Use the dropdown menu below to select a category.
+
+    Support Server
+    For more help, consider joining the official server over at https://discord.gg/{{config.discord_invite_code}}
+    
+    How do I use this bot?
+    Reading the bot signature is pretty simple.
+    
+    <argument>
+    This means the argument is required.
+    
+    [argument]
+    This means the argument is optional.
+    
+    [A|B]
+    This means that it can be either A or B.
+    
+
+    [argument...]
+    This means you can have multiple arguments.
+    
+    Now that you know the basics, it should be noted that...
+    You do not type in the brackets!
+
 {% for i in commands %}
-- ## __{{i.name}}__
+## {{i.name}}
+{% if i.description %}
+{{i.description}}
+{% endif %}
 
 {% for j in i.commands_list %}
- ### __{{j.name}}__
-<table style="box-shadow: 5px 5px 5px 5px black;">
-  <tr>
-    <td>
-    <h3>{{ i.description|format_description }}</h3>
-    {% if i.discord %}
-    <a title="{{ i.name|capitalize }} Discord" href="{{ i.discord }}" target="_blank"><i class='bx bxl-discord' style="font-size: 40px; color: #5865F2;"></i></a>
-    {% endif %}
-    {% if i.website %}
-    <a title="{{ i.name|capitalize }} Website" href="{{ i.website }}" target="_blank"><i class='bx bx-globe' style="font-size: 40px;"></i></a>
-    {% endif %}
-    {% if i.invite %}<a title="{{ i.name }} Invite Link" href="{{ i.invite }}" target="_blank"><i class='bx bx-link' style="font-size: 40px;"></i></a>{% endif %}
-    {% if i.twitter %}<a title="{{ i.name }} Twitter Account" href="{{ i.twitter }}" target="_blank"><i class='bx bxl-twitter' style="font-size: 40px; color: #00acee;"></i></a>{% endif %}
-    </td>
-  </tr>
-</table>
+### - {{ j.name }}
+{{ j.short_doc }}
+
+{% if j.params %}
+    Parameters Required: {{j.params}}
+{% endif %}
+{% if j.usage %}
+    Usage: {{j.usage}}
+{% endif %}
+{% if j.aliases %}
+    Aliases: {{j.aliases}}
+{% endif %}
+
+<hr/>
 {% endfor %}
+
+<hr/>
 {% endfor %}
+
+

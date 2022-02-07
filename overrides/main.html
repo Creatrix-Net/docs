@@ -42,18 +42,19 @@
 <meta name="author" content="{{ config.site_author }}"> {% endif %} {% if page.canonical_url %}
 <link rel="canonical" href="{{ page.canonical_url }}"> {% endif %}
 <link rel="icon" href="{{ config.theme.favicon | url }}">
-<meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-7.2.2"> {% endblock %} {% block announce %}
+<meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-7.2.2"> {% endblock %}
 
-<!-- <style>
+<!-- <style> in announce block
     .twitter {
         color: #1DA1F2;
     }
 </style><strong><i>v2</i></strong> of <b style="color: #f79d00;">Minato Namikaze</b> will be releasing soon! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a style="color: #09d6dd;" href="https://github.com/The-4th-Hokage/yondaime-hokage/projects/1"
     target="_blank">Stay tuned</a>&nbsp;
 <span class="twemoji twitter">
-    {% include ".icons/fontawesome/brands/twitter.svg" %}
+    {# include ".icons/fontawesome/brands/twitter.svg" #}
     </span> -->
-
+{% block scripts %}
+{{ super() }}
 <script src="https://xnqtmjy63llr.statuspage.io/embed/script.js"></script>
 <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
     new Crate({

@@ -1,9 +1,10 @@
-import json
-
-from pathlib import Path
-import os, requests, random
-
 import functools
+import json
+import os
+import random
+from pathlib import Path
+
+import requests
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -13,7 +14,6 @@ try:
 except:
     pass
 
-@functools.lru_cache
 def discord_api_req(
     path: str,
     method: str = "post" or "get",
@@ -31,7 +31,6 @@ def discord_api_req(
     content = req.json()
     return content
 
-@functools.lru_cache
 def get_the_user_image_url(bot_id: int) -> str:
     users_data = discord_api_req(f'/users/{bot_id}','get')
     return f'https://cdn.discordapp.com/avatars/{bot_id}/{users_data.get("avatar")}.png?size=512'
@@ -48,14 +47,15 @@ class Command:
         self.name = json_dict["name"]
         self.short_doc = json_dict["short_doc"]
         self.usage = json_dict.get("usage")
-        self.aliases = json_dict.get("aliases")
+        self.aliases = ', '.join(json_dict.get("aliases")) if json_dict.get("aliases") is not None else None
         self.description = json_dict.get("description")
-        self.params = json_dict.get("params")
+        self.params = ', '.join(json_dict.get("params")) if json_dict.get("params") is not None else None
             
 class CommandGroups:
     def __init__(self, list_dict: list, name: str):
         self.name = name
-        self.commands_list = [Command(list_dict[count]) for count,i in enumerate(list_dict)]
+        self.description = list_dict.get('description')
+        self.commands_list = [Command(list_dict['cog_commands_list'][count]) for count,i in enumerate(list_dict['cog_commands_list'])]
 
 
 def define_env(env):
@@ -75,7 +75,6 @@ def define_env(env):
     
     env.variables['partners'] = partners()
     
-    @functools.lru_cache
     def commands_groups():
         req = requests.get(
             'https://raw.githubusercontent.com/The-4th-Hokage/yondaime-hokage/master/minato_namikaze/lib/data/commands.json',

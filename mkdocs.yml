@@ -20,13 +20,12 @@ theme:
         - search.share
         - navigation.instant
         - navigation.tracking
-        - navigation.indexes
         - navigation.tabs
-        - navigation.tabs.sticky
-        - navigation.sections
         - navigation.expand
+        - navigation.indexes
         - navigation.top
         - toc.integrate
+        
 
     icon:
         repo: fontawesome/brands/github
@@ -56,14 +55,18 @@ repo_name: Source Code
 site_description: Konichiwa &#128075;, myself Minato Namikaze, Konohagakure Yondaime Hokage. I do every work of a Hokage in a swift and clean way &#9889;
 site_keywords: Minato Namikaze, discord bot, minato, namikaze, discord.py,best discord bot, best anime bot, anime, bot, discord bot
 bot_discord_id: 935242576343224352
+discord_invite_code: wXVQahNM5c
 copyright: This is a fan-made bot and we are not associated with Tokyo TV Corporation :)
 
 markdown_extensions:
   - attr_list
+  - pymdownx.snippets
+  - md_in_html
   - toc:
       permalink: true
-      toc_depth: 2
-  - pymdownx.snippets
+      toc_depth : 2
+      slugify: !!python/name:pymdownx.slugs.uslugify
+      title: Category
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg

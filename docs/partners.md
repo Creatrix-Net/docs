@@ -7,7 +7,7 @@ Hi these are our partners, please go and check these amazing sites out!
 ```
 
 {% for i in partners %}
-- ## __{{ i.name }}__
+## __{{ i.name }}__
 <table {% if i.shadow %}style="box-shadow: 5px 5px 5px 5px {{i.shadow}};"{% endif %}>
   <tr>
     <td><img src="{{ i.logo or i.profile_logo }}" loading="lazy" width="350px" {% if not i.no_round %}style="border-radius: 50%;"{% endif %}></td>
