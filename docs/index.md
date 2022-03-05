@@ -13,7 +13,7 @@ tags:
 
 # **Minato Namikaze**
 
-### Konichiwa, myself Minato Namikaze, Konohagakure Yondaime Hokage, I try my best to do every work as a Hokage! 
+### Konichiwa 👋, myself Minato Namikaze, Konohagakure Yondaime Hokage. I do every work of a Hokage in a swift and clean way ⚡
 
 
 ![Owner](https://api.discordlist.space/v2/bots/{{config.bot_discord_id}}/badge?property=owner&style=for-the-badge&color=orange) ![Status](https://top.gg/api/widget/status/{{config.bot_discord_id}}.svg)  ![Servers](https://top.gg/api/widget/servers/{{config.bot_discord_id}}.svg) ![Support](https://api.discordlist.space/v2/bots/{{config.bot_discord_id}}/badge?property=support&style=flat-square&color=orange) 
@@ -60,5 +60,5 @@ To contact us for queries please join our support server.
 
 ***
 
-![Namikaze Family](https://media.discordapp.net/attachments/777918705098686465/813086521481232414/image0.jpg)
+![Namikaze Family](/assets/banner.jpg)
 
