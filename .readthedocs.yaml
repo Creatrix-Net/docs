@@ -18,3 +18,8 @@ mkdocs:
 python:
    install:
    - requirements: requirements/requirements.min.txt
+
+search:
+  ranking:
+    api/v1/*: -1
+    api/v2/*: 4
