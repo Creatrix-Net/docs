@@ -30,6 +30,8 @@ theme:
     icon:
         repo: fontawesome/brands/github
 plugins:
+    - tags:
+        tags_file: tags.md
     - minify:
           minify_html: true
           minify_js: true

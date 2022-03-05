@@ -1,9 +1,24 @@
+---
+tags:
+  - commands
+  - message commands
+---
+
 <style>
     article{
         font-family: monospace;
         padding: 0 3px;
     }
 </style>
+    The prefix for the bot is ) or m! or minato
+    i.e. either of following would work
+    )help
+    m!help
+    minato help
+    
+    Also by mentioning Minato you invoke commands i.e.
+    @Minato Namikaze help
+
 
     Use ")help command" for more info on a command.
     Use ")help category" for more info on a category.
@@ -39,13 +54,18 @@
 
 {% for j in i.commands_list %}
 ### - {{ j.name }}
+
+{% if j.parent is not none %}
+> Parent: [{{j.parent}}](#{{j.parent}})
+{% endif %}
+
 {{ j.short_doc }}
 
 {% if j.params %}
     Parameters Required: {{j.params}}
 {% endif %}
 {% if j.usage %}
-    Usage: {{j.usage}}
+    Usage: [prefix]{% if j.parent is not none %}{{j.parent}} {% endif %}{{ j.name }} {{j.usage}}
 {% endif %}
 {% if j.aliases %}
     Aliases: {{j.aliases}}

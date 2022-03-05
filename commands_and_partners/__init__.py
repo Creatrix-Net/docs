@@ -49,6 +49,7 @@ class Command:
         self.usage = json_dict.get("usage")
         self.aliases = ', '.join(json_dict.get("aliases")) if json_dict.get("aliases") is not None else None
         self.description = json_dict.get("description")
+        self.parent = json_dict.get("parent") if len(json_dict.get("parent")) > 0 else None
         self.params = ', '.join(json_dict.get("params")) if json_dict.get("params") is not None else None
             
 class CommandGroups:
@@ -56,6 +57,20 @@ class CommandGroups:
         self.name = name
         self.description = list_dict.get('description')
         self.commands_list = [Command(list_dict['cog_commands_list'][count]) for count,i in enumerate(list_dict['cog_commands_list'])]
+
+
+class ApplicationCommandsOptions:
+    def __init__(self, json_dict: dict):
+        self.name = json_dict["name"]
+        self.description = json_dict["description"]
+        self.required = json_dict["required"]
+        self.type = json_dict["type"]
+
+class ApplicationCommands:
+    def __init__(self, json_dict: dict):
+        self.name = json_dict["name"]
+        self.description = json_dict["description"]
+        self.options = [ApplicationCommandsOptions(i) for i in json_dict.get("options")] if json_dict.get("options") is not None else []
 
 
 def define_env(env):
@@ -80,9 +95,17 @@ def define_env(env):
             'https://raw.githubusercontent.com/The-4th-Hokage/yondaime-hokage/master/minato_namikaze/lib/data/commands.json',
         )
         commands_json = req.json()
-        return [CommandGroups(commands_json[i], i) for i in commands_json]
+        return [CommandGroups(commands_json['commands'][i], i) for i in commands_json['commands']]
+    
+    def application_commands_groups():
+        req = requests.get(
+            'https://raw.githubusercontent.com/The-4th-Hokage/yondaime-hokage/master/minato_namikaze/lib/data/commands.json',
+        )
+        commands_json = req.json()
+        return [ApplicationCommands(i) for i in commands_json['application_commands']]
     
     env.variables['commands'] = commands_groups()
+    env.variables['application_commands'] = application_commands_groups()
     
     @functools.lru_cache
     @env.filter

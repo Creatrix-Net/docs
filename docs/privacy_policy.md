@@ -3,6 +3,11 @@ summary: Konichiwa, myself Minato Namikaze, Konohagakure Yondaime Hokage, I try 
 hide:
   - navigation
   - toc
+
+tags:
+  - privacy policy
+  - privacy
+  - policy
 ---
 
 # Well, Here is the Privacy Policy :)
