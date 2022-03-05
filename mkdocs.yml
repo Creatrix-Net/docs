@@ -57,7 +57,7 @@ repo_name: Source Code
 site_description: Konichiwa &#128075;, myself Minato Namikaze, Konohagakure Yondaime Hokage. I do every work of a Hokage in a swift and clean way &#9889;
 site_keywords: Minato Namikaze, discord bot, minato, namikaze, discord.py,best discord bot, best anime bot, anime, bot, discord bot
 bot_discord_id: 935242576343224352
-discord_invite_code: wXVQahNM5c
+discord_invite_code: vfXHwS3nmQ
 copyright: This is a fan-made bot and we are not associated with Tokyo TV Corporation :)
 
 markdown_extensions:
@@ -78,8 +78,7 @@ markdown_extensions:
 
 extra:
   version:
-    provider: mike
-    default: stable
+      provider: mike
   analytics:
     provider: google
     property: G-K0T92G87GZ
@@ -88,7 +87,7 @@ extra:
       link: https://github.com/The-4th-Hokage
       name: Github Organization
     - icon: fontawesome/brands/discord
-      link: https://discord.gg/S8kzbBVN8b
+      link: https://discord.gg/vfXHwS3nmQ
       name: Discord Support Server
     - icon: topgg
       link: https://top.gg/bot/935242576343224352
@@ -126,8 +125,7 @@ extra:
 
 nav:
     - Home: 'index.md'
-    - Privacy Policy: 'privacy_policy.md'
-    - Commands: 'commands.md'
+    - Commands: 'commands/index.md'
     - Contributors: 'contributors.md'
     - Partners: 'partners.md'
 

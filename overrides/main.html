@@ -53,6 +53,12 @@
 <span class="twemoji twitter">
     {# include ".icons/fontawesome/brands/twitter.svg" #}
     </span> -->
+{% block outdated %}
+    You're not viewing the latest version.
+    <a href="{{ '../' ~ base_url }}"> 
+      <strong>Click here to go to latest.</strong>
+    </a>
+  {% endblock %}
 {% block scripts %}
 {{ super() }}
 <script src="https://xnqtmjy63llr.statuspage.io/embed/script.js"></script>

@@ -2,6 +2,10 @@
 hide:
   - navigation
   - toc
+
+tags:
+  - contributors
+  - helpers
 ---
 
 # Our Contributors

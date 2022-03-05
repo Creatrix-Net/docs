@@ -6,8 +6,8 @@ hide:
 
 tags:
   - privacy policy
-  - privacy
   - policy
+  - rules
 ---
 
 # Well, Here is the Privacy Policy :)

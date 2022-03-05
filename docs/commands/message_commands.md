@@ -10,6 +10,8 @@ tags:
         padding: 0 3px;
     }
 </style>
+# Message Commands 
+
     The prefix for the bot is ) or m! or minato
     i.e. either of following would work
     )help
@@ -18,6 +20,8 @@ tags:
     
     Also by mentioning Minato you invoke commands i.e.
     @Minato Namikaze help
+
+    And in DM's only m! works i.e. only m!help in DM's
 
 
     Use ")help command" for more info on a command.
