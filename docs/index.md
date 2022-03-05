@@ -16,7 +16,7 @@ tags:
 ### Konichiwa 👋, myself Minato Namikaze, Konohagakure Yondaime Hokage. I do every work of a Hokage in a swift and clean way ⚡
 
 
-![Owner](https://api.discordlist.space/v2/bots/{{config.bot_discord_id}}/badge?property=owner&style=for-the-badge&color=orange) ![Status](https://top.gg/api/widget/status/{{config.bot_discord_id}}.svg){ loading=lazy }  ![Servers](https://top.gg/api/widget/servers/{{config.bot_discord_id}}.svg){ loading=lazy } ![Support](https://api.discordlist.space/v2/bots/{{config.bot_discord_id}}/badge?property=support&style=flat-square&color=orange) { loading=lazy }
+![Owner](https://api.discordlist.space/v2/bots/{{config.bot_discord_id}}/badge?property=owner&style=for-the-badge&color=orange) ![Status](https://top.gg/api/widget/status/{{config.bot_discord_id}}.svg){ loading=lazy }  ![Servers](https://top.gg/api/widget/servers/{{config.bot_discord_id}}.svg){ loading=lazy } ![Support](https://api.discordlist.space/v2/bots/{{config.bot_discord_id}}/badge?property=support&style=flat-square&color=orange){ loading=lazy }
 
 ![image](https://i.imgur.com/FzgLCHM.jpeg){ loading=lazy }
 
