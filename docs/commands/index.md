@@ -1,14 +1,11 @@
 ---
 title: Commands Help
-enable:
-  - navigation
-  - toc
-
 tags:
   - commands
   - message commands
   - application commands
   - context menus
+  - slash commands
 ---
 
 **Minato Namikaze** provides 2 different types of commands, namely `Message Commands` and `Application Commands`
@@ -47,4 +44,29 @@ Here in **Minato Namikaze** the `application commands are categorized` into two 
 
 ### Slash Commands
 
-Slash Commands are the new, exciting way to interact with bots on Discord. With Slash Commands, all you have to do is type / and you're ready to use the bot. You can easily see all the commands a bot has, and validation and error handling help you get the command right the first time.
+Slash Commands are the new, exciting way to interact with bots on Discord. With Slash Commands, all you have to do is type `/` and you're ready to use the bot. You can easily see all the commands a bot has, and validation and error handling help you get the command right the first time.
+
+To get a list of full application commands click the button below:
+
+[Application Commands List](application_commands.md){ .md-button }
+
+![How to interaction with bot via slash commands](/assets/commands/slash_commands.gif)
+
+### Context Menus
+
+Context Menus are futher divided into two different types:
+
+- [User Context Menus](#user-context-menus)
+- [Message Context Menus](#message-context-menus)
+
+To get a list of full application commands click the button below:
+
+[Application Commands List](application_commands.md){ .md-button }
+
+#### User Context Menus
+User Context Menus are application commands that appear on the context menu (right click or tap) of users. They don't take any arguments.
+
+#### Message Context Menus
+Message Context Menus are application commands that appear on the context menu (right click or tap) of messages. They don't take any arguments.
+
+![How to interaction with bot via context menus](/assets/commands/context_menus.gif)

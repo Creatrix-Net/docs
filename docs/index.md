@@ -29,7 +29,7 @@ tags:
 
 ## Get Started
 
-[Invite Now :fontawesome-solid-link:](https://discord.com/oauth2/authorize?client_id={{config.bot_discord_id}}&permissions=8&redirect_uri=https%3A%2F%2Fminatonamikaze-invites.herokuapp.com%2Finvite&scope=applications.commands%20bot&response_type=code&state=cube12345%3F%2FBot%20Website){ .md-button } [Get Started :fontawesome-solid-play-circle:](#){ .md-button }
+[Invite Now :fontawesome-solid-link:](https://discord.com/oauth2/authorize?client_id={{config.bot_discord_id}}&permissions=8&redirect_uri=https%3A%2F%2Fminatonamikaze-invites.herokuapp.com%2Finvite&scope=applications.commands%20bot&response_type=code&state=cube12345%3F%2FBot%20Website){ .md-button } [Get Started :fontawesome-solid-circle-play:](commands/index.md){ .md-button }
 
 ## Widgets
 
@@ -44,6 +44,11 @@ Discordlist Space | <a href="https://discordlist.space/bot/{{config.bot_discord_
 Void Bots        | <a href="https://voidbots.net/bot/{{config.bot_discord_id}}" target="_blank"><img src="https://voidbots.net/api/embed/{{config.bot_discord_id}}?theme=dark" width="300" /></a> | [Click Here](https://voidbots.net/bot/{{config.bot_discord_id}}/vote)
 Fates List       | <a href="https://fateslist.xyz/bot/{{config.bot_discord_id}}" target="_blank"><img src="https://fateslist.xyz/api/bots/{{config.bot_discord_id}}/widget?format=png" /></a> | [Click Here](https://fateslist.xyz/bot/{{config.bot_discord_id}}/vote)
 Infinity Botlist       | <a href="https://botlist.site/bots/{{config.bot_discord_id}}" target="_blank"><img src="https://infinitybotlist.com/bots/{{config.bot_discord_id}}/widget?size=large" /></a> | [Click Here](https://infinitybotlist.com/bots/{{config.bot_discord_id}}/vote)
+
+
+# Rules
+
+[Privacy Policy](rules/privacy_policy.md){ .md-button }
 
 
 # Contact Us

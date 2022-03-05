@@ -70,7 +70,7 @@ class ApplicationCommands:
     def __init__(self, json_dict: dict):
         self.name = json_dict["name"]
         self.description = json_dict["description"]
-        self.options = [ApplicationCommandsOptions(i) for i in json_dict.get("options")] if json_dict.get("options") is not None else []
+        self.options = [ApplicationCommandsOptions(i) for i in json_dict.get("options")] if len(json_dict.get("options"))>0 is not None else None
 
 
 def define_env(env):

@@ -1,4 +1,5 @@
 ---
+title: Message Commands List
 tags:
   - commands
   - message commands
@@ -10,7 +11,7 @@ tags:
         padding: 0 3px;
     }
 </style>
-# Message Commands 
+List of all `message commands` available in the bot.
 
     The prefix for the bot is ) or m! or minato
     i.e. either of following would work

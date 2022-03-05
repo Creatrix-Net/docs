@@ -24,7 +24,7 @@ theme:
         - navigation.expand
         - navigation.indexes
         - navigation.top
-        - toc.integrate
+        - navigation.sections
         
 
     icon:
@@ -81,7 +81,7 @@ extra:
       provider: mike
   analytics:
     provider: google
-    property: G-K0T92G87GZ
+    property: UA-203952403-1
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/The-4th-Hokage
@@ -124,9 +124,11 @@ extra:
       name: Discord Labs Link
 
 nav:
-    - Home: 'index.md'
-    - Commands: 'commands/index.md'
-    - Contributors: 'contributors.md'
-    - Partners: 'partners.md'
-
+  - Home: index.md
+  - Commands: 
+    - commands/index.md
+    - Message Commands List: commands/message_commands.md
+    - Application Commands List: commands/application_commands.md
+  - Contributors: contributors.md
+  - Partners: partners.md
 
