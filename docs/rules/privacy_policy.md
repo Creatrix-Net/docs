@@ -25,4 +25,4 @@ And rest the [DISCORD PRIVACY POLICY](https://discord.com/privacy) applies.**
 
 ***
 
-![Smiling Naruto](https://i.imgur.com/HQytIoC.jpg)
+![Smiling Naruto](https://i.imgur.com/HQytIoC.jpg){ loading=lazy }
