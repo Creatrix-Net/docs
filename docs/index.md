@@ -41,8 +41,9 @@ Top.GG           | <a href="https://top.gg/bot/{{config.bot_discord_id}}"  targe
 Bots For Discord | <a href="https://discords.com/bots/bots/{{config.bot_discord_id}}" target="_blank"><img src="https://discords.com/bots/api/bot/{{config.bot_discord_id}}/widget" loading="lazy" title="Visit Minato Namikaze listed on Discords.com!" alt="Minato Namikaze's Widget Failed to Load" /></a> | [Click Here](https://discords.com/bots/bot/{{config.bot_discord_id}}/vote)
 Discordlist Space | <a href="https://discordlist.space/bot/{{config.bot_discord_id}}" target="_blank"><img loading="lazy" src="https://api.discordlist.space/v2/bots/{{config.bot_discord_id}}/widget?background=7289DA&radius=6" title="Visit Minato Namikaze listed on Discordlist Space!" alt="Minato Namikaze's Widget Failed to Load" /></a> | [Click Here](https://discordlist.space/bot/{{config.bot_discord_id}}/upvote)
 Void Bots        | <a href="https://voidbots.net/bot/{{config.bot_discord_id}}" target="_blank"><img loading="lazy" src="https://voidbots.net/api/embed/{{config.bot_discord_id}}?theme=dark" width="300" /></a> | [Click Here](https://voidbots.net/bot/{{config.bot_discord_id}}/vote)
-Fates List       | <a href="https://fateslist.xyz/bot/{{config.bot_discord_id}}" target="_blank"><img loading="lazy" src="https://fateslist.xyz/api/bots/{{config.bot_discord_id}}/widget?format=png" /></a> | [Click Here](https://fateslist.xyz/bot/{{config.bot_discord_id}}/vote)
-Infinity Botlist       | <a href="https://botlist.site/bots/{{config.bot_discord_id}}" target="_blank"><img loading="lazy" src="https://infinitybotlist.com/bots/{{config.bot_discord_id}}/widget?size=large" /></a> | [Click Here](https://infinitybotlist.com/bots/{{config.bot_discord_id}}/vote)
+Fates List       | <a href="https://fateslist.xyz/bot/{{config.bot_discord_id}}" target="_blank"><img loading="lazy" src="https://widgets.fateslist.xyz/{{config.bot_discord_id}}?target_type=bot&format=png" /></a> | [Click Here](https://fateslist.xyz/bot/{{config.bot_discord_id}}/vote)
+Infinity Botlist       | <a href="https://botlist.site/bots/{{config.bot_discord_id}}" target="_blank"><img loading="lazy" src="https://infinitybots.gg/bots/{{config.bot_discord_id}}/widget?size=large" /></a> | [Click Here](https://infinitybotlist.com/bots/{{config.bot_discord_id}}/vote)
+
 
 
 # Rules
