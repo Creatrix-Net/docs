@@ -55,9 +55,6 @@ site_name: Minato Namikaze
 site_author: Miku Chan
 repo_name: Source Code
 site_description: Konichiwa &#128075;, myself Minato Namikaze, Konohagakure Yondaime Hokage. I do every work of a Hokage in a swift and clean way &#9889;
-site_keywords: Minato Namikaze, discord bot, minato, namikaze, discord.py,best discord bot, best anime bot, anime, bot, discord bot
-bot_discord_id: 935242576343224352
-discord_invite_code: vfXHwS3nmQ
 copyright: This is a fan-made bot and we are not associated with Tokyo TV Corporation :)
 
 markdown_extensions:

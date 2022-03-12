@@ -30,7 +30,7 @@ List of all `message commands` available in the bot.
     Use the dropdown menu below to select a category.
 
     Support Server
-    For more help, consider joining the official server over at https://discord.gg/{{config.discord_invite_code}}
+    For more help, consider joining the official server over at https://discord.gg/{{discord_invite_code}}
     
     How do I use this bot?
     Reading the bot signature is pretty simple.
