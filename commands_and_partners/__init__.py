@@ -1,10 +1,11 @@
 import functools
 import json
 import os
-import random, typing
-import markdown
+import random
+import typing
 from pathlib import Path
 
+import markdown
 import requests
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -14,6 +15,8 @@ try:
     dotenv.load_dotenv(BASE_DIR/ os.path.join('config', '.env'))
 except:
     pass
+
+contributors_mapping = {'audio': '\U0001f50a', 'a11y': '\U0000267f', 'bug': '\U0001f41b', 'blog': '\U0001f4dd', 'business': '\U0001f4bc', 'code': '\U0001f4bb', 'content': '\U0001f58b', 'data': '\U0001f523', 'doc': '\U0001f4d6', 'design': '\U0001f3a8', 'example': '\U0001f4a1', 'eventorganizing': '\U0001f4cb', 'financial': '\U0001f4b5', 'fundingfinding': '\U0001f50d', 'ideas': '\U0001f914', 'infra': '\U0001f687', 'maintenance': '\U0001f6a7', 'mentoring': '\U0001f9d1\U0001f3eb', 'platform': '\U0001f4e6', 'plugin': '\U0001f50c', 'projectmanagement': '\U0001f4c6', 'question': '\U0001f4ac', 'research': '\U0001f52c', 'review': '\U0001f440', 'security': '\U0001f6e1', 'tool': '\U0001f527', 'translation': '\U0001f30d', 'test': '\U000026a0', 'tutorial': '\U00002705', 'talk': '\U0001f4e2', 'usertesting': '\U0001f4d3', 'video': '\U0001f4f9'}
 
 def discord_api_req(
     path: str,
@@ -35,6 +38,19 @@ def discord_api_req(
 def get_the_user_image_url(bot_id: int) -> str:
     users_data = discord_api_req(f'/users/{bot_id}','get')
     return f'https://cdn.discordapp.com/avatars/{bot_id}/{users_data.get("avatar")}.png?size=512'
+
+def _chunk(iterator, max_size: int):
+    ret = []
+    n = 0
+    for item in iterator:
+        ret.append(item)
+        n += 1
+        if n == max_size:
+            yield ret
+            ret = []
+            n = 0
+    if ret:
+        yield ret
 
 class Partners:
     def __init__(self, json_dict: dict):
@@ -71,8 +87,16 @@ class ApplicationCommands:
     def __init__(self, json_dict: dict):
         self.name = json_dict["name"]
         self.description = json_dict["description"]
-        self.options = [ApplicationCommandsOptions(i) for i in json_dict.get("options")] if len(json_dict.get("options"))>0 is not None else None
+        self.options = [ApplicationCommandsOptions(i) for i in json_dict.get("options")] if len(json_dict.get("options")) > 0 else None
 
+
+class Contributors:
+    def __init__(self, json_dict: dict):
+        self.login = json_dict['login']
+        self.name = json_dict['name']
+        self.avatar_url = json_dict['avatar_url']
+        self.profile = json_dict['profile']
+        self.contributions = json_dict['contributions']
 
 def define_env(env):
     global BASE_DIR
@@ -105,8 +129,16 @@ def define_env(env):
         commands_json = req.json()
         return [ApplicationCommands(i) for i in commands_json['application_commands']]
     
+    def contributors_data():
+        req = requests.get(
+            'https://raw.githubusercontent.com/The-4th-Hokage/yondaime-hokage/master/.all-contributorsrc'
+        )
+        json_data = req.json()
+        return [Contributors(i) for i in json_data['contributors']]
+    
     env.variables['commands'] = commands_groups()
     env.variables['application_commands'] = application_commands_groups()
+    env.variables['contributors_data'] = _chunk(contributors_data(), 7)
     
     @functools.lru_cache
     @env.filter
@@ -162,10 +194,5 @@ def define_env(env):
         "video",
     ]):
         """Contribution to emoji"""
-        emoji_mapping = {}
-        with open(BASE_DIR / os.path.join('config', 'emojis.mapping.txt')) as f:
-            list_mapping = list(map(lambda a: {a.split()[-1].lower(): a.split()[0]},f.readlines()))
-        for i in list_mapping:
-            emoji_mapping.update(i)
-        return emoji_mapping.get(contrib.lower())
+        return contributors_mapping.get(contrib.lower())
             
