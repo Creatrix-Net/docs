@@ -1,7 +1,7 @@
 import functools
 import json
 import os
-import random
+import random, typing
 import markdown
 from pathlib import Path
 
@@ -117,12 +117,55 @@ def define_env(env):
     @functools.lru_cache
     @env.filter
     def reverse(x):
-        "Reverse a string (and uppercase)"
+        """Reverse a string (and uppercase)"""
         return x.upper()[::-1]
 
     @functools.lru_cache    
     @env.filter
     def capitalize(x):
-        "Reverse a string (and uppercase)"
+        """Reverse a string (and uppercase)"""
         return x.capitalize()
+    
+    @functools.lru_cache    
+    @env.filter
+    def contribution_to_emoji(contrib: typing.Literal[
+        "a11y",
+        "audio",
+        "blog",
+        "bug",
+        "business",
+        "code",
+        "content",
+        "data",
+        "design",
+        "doc",
+        "eventorganizing",
+        "example",
+        "financial",
+        "fundingfinding",
+        "ideas",
+        "infra",
+        "maintenance",
+        "mentoring",
+        "platform",
+        "plugin",
+        "projectManagement",
+        "question",
+        "review",
+        "security",
+        "talk",
+        "test",
+        "tool",
+        "translation",
+        "tutorial",
+        "usertesting",
+        "video",
+    ]):
+        """Contribution to emoji"""
+        emoji_mapping = {}
+        with open(BASE_DIR / os.path.join('config', 'emojis.mapping.txt')) as f:
+            list_mapping = list(map(lambda a: {a.split()[-1].lower(): a.split()[0]},f.readlines()))
+        for i in list_mapping:
+            emoji_mapping.update(i)
+        return emoji_mapping.get(contrib.lower())
             
