@@ -2,6 +2,7 @@ import functools
 import json
 import os
 import random
+import markdown
 from pathlib import Path
 
 import requests
@@ -111,7 +112,7 @@ def define_env(env):
     @env.filter
     def format_description(x):
         '''Formats the bot's markdown description to HTML one'''
-        return x.replace('\n', '<br/>')
+        return markdown.markdown(x.replace('\n', '<br/>').replace('\t','&nbsp;&nbsp;&nbsp;&nbsp;'))
 
     @functools.lru_cache
     @env.filter

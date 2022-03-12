@@ -77,6 +77,9 @@ markdown_extensions:
           - overrides/.icons
 
 extra:
+  bot_discord_id: 935242576343224352
+  discord_invite_code: vfXHwS3nmQ
+  site_keywords: Minato Namikaze, discord bot, minato, namikaze, discord.py,best discord bot, best anime bot, anime, bot, discord bot
   version:
       provider: mike
   analytics:
@@ -101,9 +104,6 @@ extra:
     - icon: botsfordiscord
       link: https://discords.com/bots/bot/935242576343224352
       name: Bots For Discord Link
-    - icon: discordboats
-      link: https://discord.boats/bot/935242576343224352
-      name: Discord Boats Link
     - icon: bladebotlist
       link: https://bladebotlist.xyz/bot/935242576343224352
       name: BladeBotList Link

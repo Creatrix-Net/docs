@@ -15,11 +15,11 @@
         "bot": true,
         "shadow": "#323232"
     },
-    "Discord Home": {
-        "description": "Discord Home is a nice bot that has RolePlay, Backup, Fun, Moderation & Info commands! We have a total of 63 commands! Of which 55 are usable for everyone (with the right perms)! Do you want to try them all out? Invite Discord Home now!",
-        "discord": "https://discordhome.tk/support",
-        "website": "https://discordhome.tk",
-        "invite": "https://discordhome.tk/invite",
+    "Miso &#128008;": {
+        "description": "A good moderation bot, that's still being improved!\n\nMiso has:\n\t\u25b8 **Backups**;\n\t\u25b8 Role Management;\n\t\u25b8 **Channel Management**;\n\t\u25b8 And it can also **detect** a variety of **scam links**!\n\n**Backstory**:\nMiso is a cat. Cats are more aggressive then dogs, which is why Miso is a cat. There will be another bot called Miso (dog, more playful so this will be a \"fun\" bot).",
+        "discord": "https://discord.gg/PWV44eRhZC",
+        "website": "https://misaxmiso.xyz/",
+        "invite": "https://misaxmiso.xyz/misoinvite",
         "shadow": "#5865F2",
         "bot_id": 839798877595107329,
         "bot": true
