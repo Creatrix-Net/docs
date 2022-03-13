@@ -30,13 +30,15 @@ theme:
     icon:
         repo: fontawesome/brands/github
 plugins:
+    - pdf-export:
+        enabled_if_env: ENABLE_PDF_EXPORT
     - tags:
         tags_file: tags.md
     - minify:
-          minify_html: true
-          minify_js: true
-          htmlmin_opts:
-              remove_comments: true
+        minify_html: true
+        minify_js: true
+        htmlmin_opts:
+          remove_comments: true
     - git-revision-date:
         enabled_if_env: CI
     - search:
@@ -128,5 +130,8 @@ nav:
     - Message Commands List: commands/message_commands.md
     - Application Commands List: commands/application_commands.md
   - Contributors: contributors.md
+  - Rules:
+    - Privacy Policy: rules/privacy_policy.md
+    - Terms of Use: rules/terms_of_use.md
   - Partners: partners.md
 

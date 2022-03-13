@@ -34,7 +34,7 @@ tags:
 # Rules
 
 [Privacy Policy :material-shield-lock:](rules/privacy_policy.md){ .md-button }
-[Terms of Use :material-note-check:](rules/tou.md){ .md-button }
+[Terms of Use :material-note-check:](rules/terms_of_use.md){ .md-button }
 
 
 # Contact Us
