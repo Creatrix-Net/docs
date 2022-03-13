@@ -45,7 +45,7 @@
         "discord": "https://fateslist.xyz/fates/support/invite",
         "website": "https://fateslist.xyz/",
         "shadow": "#0afc83",
-        "logo": "https://fateslist.xyz/static/botlisticon.webp",
+        "logo": "https://api.fateslist.xyz/static/botlisticon.webp",
         "twitter": "https://twitter.com/FatesList",
         "no_round": true
     },

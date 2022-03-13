@@ -74,6 +74,7 @@ markdown_extensions:
           - overrides/.icons
 
 extra:
+  bot_name: Minato Namikaze
   bot_discord_id: 935242576343224352
   discord_invite_code: vfXHwS3nmQ
   site_keywords: Minato Namikaze, discord bot, minato, namikaze, discord.py,best discord bot, best anime bot, anime, bot, discord bot

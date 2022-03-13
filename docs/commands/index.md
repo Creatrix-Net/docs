@@ -8,7 +8,7 @@ tags:
   - slash commands
 ---
 
-**Minato Namikaze** provides 2 different types of commands, namely `Message Commands` and `Application Commands`
+**{{bot_name}}** provides 2 different types of commands, namely `Message Commands` and `Application Commands`
 
 ## Message Commands
 These types of commands can easily typing `[prefix]command_name sub_command_name` in discord [See the GIF below]
@@ -20,7 +20,7 @@ These types of commands can easily typing `[prefix]command_name sub_command_name
     minato help
     
     Also by mentioning Minato you invoke commands i.e.
-    @Minato Namikaze help
+    @{{bot_name}} help
 
     And in DM's only m! works i.e. only m!help in DM's
 
@@ -36,7 +36,7 @@ To get a list of full messagable commands click the button below:
 
 ```Application commands are commands that an application can register to Discord. They provide users a first-class way of interacting directly with your application that feels deeply integrated into Discord.``` : This is the [Discord definition](https://discord.com/developers/docs/interactions/application-commands#application-commands)
 
-Here in **Minato Namikaze** the `application commands are categorized` into two different types:
+Here in **{{bot_name}}** the `application commands are categorized` into two different types:
 
 - [Slash Commands](#slash-commands)
 

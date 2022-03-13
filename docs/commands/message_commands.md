@@ -20,7 +20,7 @@ List of all `message commands` available in the bot.
     minato help
     
     Also by mentioning Minato you invoke commands i.e.
-    @Minato Namikaze help
+    @{{bot_name}} help
 
     And in DM's only m! works i.e. only m!help in DM's
 
