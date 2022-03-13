@@ -98,10 +98,18 @@ class Contributors:
         self.profile = json_dict['profile']
         self.contributions = json_dict['contributions']
 
+
+class Botlist:
+    def __init__(self, name: str, value:str):
+        self.name = name.title()
+        self.url = value
+        self.http_url = 'http://'+value
+        self.https_url = 'https://'+value
+
+
 def define_env(env):
     global BASE_DIR
     
-    @functools.lru_cache
     def partners(*args, **kwargs):
         file_path = BASE_DIR / os.path.join('config', 'partners.json')
         with open(file_path, 'r') as f:
@@ -112,8 +120,6 @@ def define_env(env):
         random_data = [ add_data(i, data[i]) for i in data ]
         random.shuffle(random_data)
         return random_data
-    
-    env.variables['partners'] = partners()
     
     def commands_groups():
         req = requests.get(
@@ -136,9 +142,18 @@ def define_env(env):
         json_data = req.json()
         return [Contributors(i) for i in json_data['contributors']]
     
+    def botlists_data():
+        req = requests.get(
+            'https://raw.githubusercontent.com/The-4th-Hokage/listing/master/listing.json'
+        )
+        json_data = req.json()
+        return [Botlist(name=i, value=json_data[i]) for i in json_data]
+    
     env.variables['commands'] = commands_groups()
+    env.variables['partners'] = partners()
     env.variables['application_commands'] = application_commands_groups()
     env.variables['contributors_data'] = _chunk(contributors_data(), 7)
+    env.variables['botlists_data'] = _chunk(botlists_data(), 2)
     
     @functools.lru_cache
     @env.filter

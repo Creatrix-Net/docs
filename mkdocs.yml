@@ -84,7 +84,7 @@ extra:
       provider: mike
   analytics:
     provider: google
-    property: UA-203952403-1
+    property: !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_TOKEN"]
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/The-4th-Hokage
@@ -134,4 +134,5 @@ nav:
     - Privacy Policy: rules/privacy_policy.md
     - Terms of Use: rules/terms_of_use.md
   - Partners: partners.md
+  - Listing: contributors.md
 
