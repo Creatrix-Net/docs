@@ -50,6 +50,11 @@ plugins:
         enable_creation_date: true
     - macros:
         module_name: commands_and_partners
+    - mike:
+        version_selector: true   
+        css_dir: css             
+        javascript_dir: js       
+        canonical_version: null
     
 repo_url: https://github.com/The-4th-Hokage/yondaime-hokage
 edit_uri: https://github.com/The-4th-Hokage/The-4th-Hokage.github.io/tree/master/docs
@@ -60,6 +65,8 @@ site_description: Konichiwa &#128075;, myself Minato Namikaze, Konohagakure Yond
 copyright: This is a fan-made bot and we are not associated with Tokyo TV Corporation :)
 
 markdown_extensions:
+  - tables
+  - smarty
   - attr_list
   - pymdownx.snippets
   - md_in_html
@@ -74,6 +81,9 @@ markdown_extensions:
       options:
         custom_icons:
           - overrides/.icons
+  - lightgallery:
+      show_description_in_lightgallery: true
+      show_description_as_inline_caption: true
 
 extra:
   bot_name: Minato Namikaze
@@ -134,5 +144,5 @@ nav:
     - Privacy Policy: rules/privacy_policy.md
     - Terms of Use: rules/terms_of_use.md
   - Partners: partners.md
-  - Listing: contributors.md
+  - Listing: botlist.md
 

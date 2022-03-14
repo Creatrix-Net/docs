@@ -44,6 +44,15 @@
 <link rel="canonical" href="{{ page.canonical_url }}"> {% endif %}
 <link rel="icon" href="{{ config.theme.favicon | url }}">
 <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-7.2.2"> {% endblock %}
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ base_url }}/css/lightgallery.min.css">
+{% endblock styles %}
+
+{% block libs %}
+    {{ super() }}
+    <script src="{{ base_url }}/js/lightgallery.min.js"></script>
+{% endblock libs %}
 
 <!-- <style> in announce block
     .twitter {
@@ -62,6 +71,12 @@
   {% endblock %}
 {% block scripts %}
 {{ super() }}
+<script>
+    var elements = document.getElementsByClassName("lightgallery");
+    for(var i=0; i<elements.length; i++) {
+       lightGallery(elements[i]);
+    }
+</script>
 <script src="https://xnqtmjy63llr.statuspage.io/embed/script.js"></script>
 <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
     new Crate({

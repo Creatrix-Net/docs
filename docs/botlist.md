@@ -21,4 +21,46 @@ tags:
 
 # Widgets
 
-<a href="https://discordbotlist.com/bots/{{bot_discord_id}}" target="_blank"><img src="https://discordbotlist.com/api/v1/bots/{{bot_discord_id}}/widget" loading="lazy"></a>
+[![!Discord Botlist Widget](https://discordbotlist.com/api/v1/bots/{{bot_discord_id}}/widget)](https://discordbotlist.com/bots/{{bot_discord_id}}){ target=_blank } 
+
+***
+
+[![!Void Bots Widget](https://voidbots.net/api/embed/{{bot_discord_id}}?theme=dark){ loading=lazy width=36% }](https://voidbots.net/bot/{{bot_discord_id}}){ target=_blank }
+
+***
+
+[![!Discord Services Widget](https://discordservices.net/bot/{{bot_discord_id}}/widget.svg)](https://discordservices.net/bot/935242576343224352){ target=_blank } 
+
+***
+
+[![!Top.gg Widget](https://top.gg/api/widget/{{bot_discord_id}}.svg){ loading=lazy }](https://top.gg/bot/{{bot_discord_id}}){ target=_blank }
+
+***
+
+[![!Fateslist Widget](https://widgets.fateslist.xyz/{{bot_discord_id}}?target_type=bot&format=png){ loading=lazy }](https://fateslist.xyz/bot/{{bot_discord_id}}){ target=_blank } 
+
+***
+
+[![!Discord List Space Widget](https://api.discordlist.space/v2/bots/{{bot_discord_id}}/widget?background=7289DA&radius=6){ loading=lazy }](https://discordlist.space/bot/{{bot_discord_id}}){ target=_blank } 
+
+***
+
+[![!Bots For Discord Widget](https://discords.com/bots/api/bot/{{bot_discord_id}}/widget){ loading=lazy }](https://discords.com/bots/bots/{{bot_discord_id}}){ target=_blank } 
+
+***
+
+[![Botlist.me Widget](https://api.botlist.me/api/v1/embed/{{bot_discord_id}}){ loading=lazy }](https://botlist.me/bots/935242576343224352){ target=_blank } 
+
+***
+
+[![Radarbotdirectory Widget](https://radarbotdirectory.xyz/api/bot/935242576343224352/widget){ loading=lazy }](https://radarbotdirectory.xyz/bot/935242576343224352){ target=_blank } 
+
+***
+
+[![!vCodes Widget](https://vcodes.xyz/api/widget/{{bot_discord_id}}.svg){ loading=lazy }](https://vcodes.xyz/bot/{{bot_discord_id}}){ target=_blank } 
+
+***
+
+[![!Blist Widget](https://blist.xyz/api/v2/bot/{{bot_discord_id}}/widget){ loading=lazy }](https://blist.xyz/bot/{{bot_discord_id}}){ target=_blank } 
+
+***
