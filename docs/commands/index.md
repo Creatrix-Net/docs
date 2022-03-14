@@ -28,7 +28,7 @@ To get a list of full messagable commands click the button below:
 
 [Message Commands List](message_commands.md){ .md-button }
 
-![How to interaction with bot via message commands](../assets/commands/message_commands.gif){ loading=lazy }
+![!How to interact with bot via message commands](../assets/commands/message_commands.gif){ loading=lazy }
 
 <hr/>
 
@@ -50,7 +50,7 @@ To get a list of full application commands click the button below:
 
 [Application Commands List](application_commands.md){ .md-button }
 
-![How to interaction with bot via slash commands](../assets/commands/slash_commands.gif){ loading=lazy }
+![!How to interact with bot via slash commands](../assets/commands/slash_commands.gif){ loading=lazy }
 
 ### Context Menus
 
@@ -69,4 +69,4 @@ User Context Menus are application commands that appear on the context menu (rig
 #### Message Context Menus
 Message Context Menus are application commands that appear on the context menu (right click or tap) of messages. They don't take any arguments.
 
-![How to interaction with bot via context menus](../assets/commands/context_menus.gif){ loading=lazy }
+![!How to interact with bot via context menus](../assets/commands/context_menus.gif){ loading=lazy }
