@@ -29,7 +29,7 @@ tags:
 
 ***
 
-[![!Discord Services Widget](https://discordservices.net/bot/{{bot_discord_id}}/widget.svg)](https://discordservices.net/bot/935242576343224352){ target=_blank } 
+[![!Discord Services Widget](https://discordservices.net/bot/{{bot_discord_id}}/widget.svg)](https://discordservices.net/bot/{{bot_discord_id}}){ target=_blank } 
 
 ***
 
@@ -53,11 +53,11 @@ tags:
 
 ***
 
-[![Infinity Botlist Widget](https://infinitybots.gg/bots/935242576343224352/widget?size=large){ loading=lazy }](https://infinitybots.gg/bots/935242576343224352){ target=_blank } 
+[![Infinity Botlist Widget](https://infinitybots.gg/bots/{{bot_discord_id}}/widget?size=large){ loading=lazy }](https://infinitybots.gg/bots/{{bot_discord_id}}){ target=_blank } 
 
 ***
 
-[![Botlist.me Widget](https://api.botlist.me/api/v1/embed/{{bot_discord_id}}){ loading=lazy }](https://botlist.me/bots/935242576343224352){ target=_blank } 
+[![Botlist.me Widget](https://api.botlist.me/api/v1/embed/{{bot_discord_id}}){ loading=lazy }](https://botlist.me/bots/{{bot_discord_id}}){ target=_blank } 
 
 
 ***
@@ -66,6 +66,6 @@ tags:
 
 ***
 
-[![!Discord Botlist EU Widget](https://widget.discord-botlist.eu/935242576343224352){ loading=lazy }](https://discord-botlist.eu/bots/935242576343224352){ target=_blank }
+[![!Discord Botlist EU Widget](https://widget.discord-botlist.eu/{{bot_discord_id}}){ loading=lazy }](https://discord-botlist.eu/bots/{{bot_discord_id}}){ target=_blank }
 
 ***
