@@ -2,6 +2,7 @@ theme:
     name: material
     color_theme: f79d00
     custom_dir: overrides
+    language: en
     logo: assets/images/logo.png
     favicon: assets/images/favicon.ico
     palette:
