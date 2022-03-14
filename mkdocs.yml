@@ -25,10 +25,9 @@ theme:
         - navigation.indexes
         - navigation.top
         - navigation.sections
-        
-
     icon:
         repo: fontawesome/brands/github
+
 plugins:
     - pdf-export:
         enabled_if_env: ENABLE_PDF_EXPORT

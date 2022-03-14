@@ -49,18 +49,23 @@ tags:
 
 ***
 
-[![Botlist.me Widget](https://api.botlist.me/api/v1/embed/{{bot_discord_id}}){ loading=lazy }](https://botlist.me/bots/935242576343224352){ target=_blank } 
-
-***
-
-[![Radarbotdirectory Widget](https://radarbotdirectory.xyz/api/bot/935242576343224352/widget){ loading=lazy }](https://radarbotdirectory.xyz/bot/935242576343224352){ target=_blank } 
-
-***
-
 [![!vCodes Widget](https://vcodes.xyz/api/widget/{{bot_discord_id}}.svg){ loading=lazy }](https://vcodes.xyz/bot/{{bot_discord_id}}){ target=_blank } 
 
 ***
 
+[![Infinity Botlist Widget](https://infinitybots.gg/bots/935242576343224352/widget?size=large){ loading=lazy }](https://infinitybots.gg/bots/935242576343224352){ target=_blank } 
+
+***
+
+[![Botlist.me Widget](https://api.botlist.me/api/v1/embed/{{bot_discord_id}}){ loading=lazy }](https://botlist.me/bots/935242576343224352){ target=_blank } 
+
+
+***
+
 [![!Blist Widget](https://blist.xyz/api/v2/bot/{{bot_discord_id}}/widget){ loading=lazy }](https://blist.xyz/bot/{{bot_discord_id}}){ target=_blank } 
+
+***
+
+[![!Discord Botlist EU Widget](https://widget.discord-botlist.eu/935242576343224352){ loading=lazy }](https://discord-botlist.eu/bots/935242576343224352){ target=_blank }
 
 ***
