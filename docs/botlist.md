@@ -21,4 +21,4 @@ tags:
 
 # Widgets
 
-<a href="https://discordbotlist.com/bots/935242576343224352" target="_blank"><img src="https://discordbotlist.com/api/v1/bots/935242576343224352/widget" loading="lazy"></a>
+<a href="https://discordbotlist.com/bots/{{bot_discord_id}}" target="_blank"><img src="https://discordbotlist.com/api/v1/bots/{{bot_discord_id}}/widget" loading="lazy"></a>
