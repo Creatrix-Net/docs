@@ -1,11 +1,4 @@
 {
-    "BladeBotList": {
-        "description": "We are a website existing since 2019 offering original Discord Bots created by developers whether they are independent or belonging to the largest companies!",
-        "discord": "https://discord.gg/PpQUZCF3H2",
-        "website": "https://bladebotlist.xyz/",
-        "logo": "https://bladelist.gg/static/img/logo.svg",
-        "shadow": "#002963"
-    },
     "AntiRaid": {
         "description": "AntiRaid The best fully free moderation and always improving moderation bot with Dashboard!",
         "discord": "https://antiraid.xyz/discord",
