@@ -7,6 +7,7 @@ from pathlib import Path
 
 import markdown
 import requests
+import time
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -18,6 +19,7 @@ except:
 
 contributors_mapping = {'audio': '\U0001f50a', 'a11y': '\U0000267f', 'bug': '\U0001f41b', 'blog': '\U0001f4dd', 'business': '\U0001f4bc', 'code': '\U0001f4bb', 'content': '\U0001f58b', 'data': '\U0001f523', 'doc': '\U0001f4d6', 'design': '\U0001f3a8', 'example': '\U0001f4a1', 'eventorganizing': '\U0001f4cb', 'financial': '\U0001f4b5', 'fundingfinding': '\U0001f50d', 'ideas': '\U0001f914', 'infra': '\U0001f687', 'maintenance': '\U0001f6a7', 'mentoring': '\U0001f9d1\U0001f3eb', 'platform': '\U0001f4e6', 'plugin': '\U0001f50c', 'projectmanagement': '\U0001f4c6', 'question': '\U0001f4ac', 'research': '\U0001f52c', 'review': '\U0001f440', 'security': '\U0001f6e1', 'tool': '\U0001f527', 'translation': '\U0001f30d', 'test': '\U000026a0', 'tutorial': '\U00002705', 'talk': '\U0001f4e2', 'usertesting': '\U0001f4d3', 'video': '\U0001f4f9'}
 
+@functools.lru_cache(maxsize=10)
 def discord_api_req(
     path: str,
     method: str = "post" or "get",
@@ -33,6 +35,7 @@ def discord_api_req(
     }
     req = requests.request(url=base_api + path, headers=headers, method=method.upper(), data=data)
     content = req.json()
+    time.sleep(5)
     return content
 
 def get_the_user_image_url(bot_id: int) -> str:
@@ -117,7 +120,7 @@ def define_env(env):
         def add_data(name: str, dict_data: dict):
             dict_data.update({'name': name})
             return Partners(dict_data)
-        random_data = [ add_data(i, data[i]) for i in data ]
+        random_data = [add_data(i, data[i]) for i in data ]
         random.shuffle(random_data)
         return random_data
     

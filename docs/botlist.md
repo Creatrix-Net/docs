@@ -37,7 +37,7 @@ tags:
 
 ***
 
-[![!Fateslist Widget](https://widgets.fateslist.xyz/{{bot_discord_id}}?target_type=bot&format=png){ loading=lazy }](https://fateslist.xyz/bot/{{bot_discord_id}}){ target=_blank } 
+[![!Fateslist Widget](https://lynx.fateslist.xyz/widgets/{{bot_discord_id}}?target_type=bot&format=png){ loading=lazy }](https://fateslist.xyz/bot/{{bot_discord_id}}){ target=_blank } 
 
 ***
 
