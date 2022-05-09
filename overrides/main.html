@@ -91,11 +91,20 @@
     }
 </script>
 <script src="https://xnqtmjy63llr.statuspage.io/embed/script.js"></script>
-<script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+<!-- <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
     new Crate({
         server: '920190307595874304', // Konohagakure
         channel: '920190310657699899',
-        location: ['bottom', 'left'],
+        location: ['top', 'right'],
     })
+</script> -->
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('mikuchan', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#5bc0de',
+    'floating-chat.donateButton.text-color': '#323842'
+  });
 </script>
 {% endblock %}

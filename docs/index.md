@@ -29,15 +29,17 @@ tags:
 
 ## Get Started
 
-[Invite Now :fontawesome-solid-link:](https://discord.com/oauth2/authorize?client_id={{bot_discord_id}}&permissions=8&redirect_uri=https%3A%2F%2Fminatonamikaze-invites.herokuapp.com%2Finvite&scope=applications.commands%20bot&response_type=code&state=cube12345%3F%2FBot%20Website){ .md-button target=_blank } [Get Started :fontawesome-solid-circle-play:](commands/index.md){ .md-button } 
-
-<a href="https://www.patreon.com/bePatron?u=20009768" target="_blank" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+[Invite Now :fontawesome-solid-link:](https://discord.com/oauth2/authorize?client_id={{bot_discord_id}}&permissions=8&redirect_uri=https%3A%2F%2Fminatonamikaze-invites.herokuapp.com%2Finvite&scope=applications.commands%20bot&response_type=code&state=cube12345%3F%2FBot%20Website){ .md-button target=_blank } [Get Started :fontawesome-solid-circle-play:](commands/index.md){ .md-button }
 
 
 # Rules
-
 [Privacy Policy :material-shield-lock:](rules/privacy_policy.md){ .md-button }
 [Terms of Use :material-note-check:](rules/terms_of_use.md){ .md-button }
+
+
+# Support Us
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F3C2R84) 
+<a href="https://www.patreon.com/bePatron?u=20009768" target="_blank" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script> 
 
 
 # Contact Us
