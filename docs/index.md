@@ -15,8 +15,11 @@ tags:
 
 ### Konichiwa 👋, myself {{bot_name}}, Konohagakure Yondaime Hokage. I do every work of a Hokage in a swift and clean way ⚡
 
+[![Owner](https://top.gg/api/widget/owner/{{bot_discord_id}}.svg){ loading=lazy }](https://top.gg/bot/{{bot_discord_id}}){ target=_blank }
+ [![Status](https://top.gg/api/widget/status/{{bot_discord_id}}.svg){ loading=lazy }](http://discord.com/users/{{bot_discord_id}}){ target=_blank }  [![Servers](https://top.gg/api/widget/servers/{{bot_discord_id}}.svg)](https://top.gg/bot/{{bot_discord_id}}){ target=_blank }
+ [![Upvotes](https://top.gg/api/widget/upvotes/{{bot_discord_id}}.svg){ loading=lazy }](https://top.gg/bot/{{bot_discord_id}}){ target=_blank }
+ [![Documentation Status](https://readthedocs.org/projects/minato-namikaze/badge/?version=latest){ loading=lazy }](https://minato-namikaze.readthedocs.io/en/latest/?badge=latest)
 
-[![Owner](https://api.discordlist.space/v2/bots/{{bot_discord_id}}/badge?property=owner&style=for-the-badge&color=orange){ loading=lazy }](http://discord.com/users/887549958931247137){ target=_blank } [![Status](https://top.gg/api/widget/status/{{bot_discord_id}}.svg){ loading=lazy }](http://discord.com/users/{{bot_discord_id}}){ target=_blank }  ![Servers](https://api.discordlist.space/v2/bots/{{bot_discord_id}}/badge?property=servers&style=flat-square&color=informational){ loading=lazy } [![Support](https://api.discordlist.space/v2/bots/{{bot_discord_id}}/badge?property=support&style=flat-square&color=yellow){ loading=lazy }](https://discord.gg/{{discord_invite_code}}){ target=_blank } [![Documentation Status](https://readthedocs.org/projects/minato-namikaze/badge/?version=latest){ loading=lazy }](https://minato-namikaze.readthedocs.io/en/latest/?badge=latest)
 
 ![image](https://i.imgur.com/FzgLCHM.jpeg){ loading=lazy }
 
@@ -37,9 +40,9 @@ tags:
 [Terms of Use :material-note-check:](rules/terms_of_use.md){ .md-button }
 
 
-# Support Us
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F3C2R84) 
-<a href="https://www.patreon.com/bePatron?u=20009768" target="_blank" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script> 
+<!-- # Support Us
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F3C2R84)  -->
+<!-- <a href="https://www.patreon.com/bePatron?u=20009768" target="_blank" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>  -->
 
 
 # Contact Us
