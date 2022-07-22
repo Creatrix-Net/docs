@@ -43,7 +43,10 @@
 <meta name="author" content="{{ config.site_author }}"> {% endif %} {% if page.canonical_url %}
 <link rel="canonical" href="{{ page.canonical_url }}"> {% endif %}
 <link rel="icon" href="{{ config.theme.favicon | url }}">
-<meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-7.2.2"> {% endblock %}
+<meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-7.2.2"> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2736810871076484" crossorigin="anonymous"></script>
+
+{% endblock %}
 {% block styles %}
     {{ super() }}
     <link rel="stylesheet" href="{{ base_url }}/css/lightgallery.min.css">
@@ -71,7 +74,6 @@
   {% endblock %}
 {% block scripts %}
 {{ super() }}
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2736810871076484" crossorigin="anonymous"></script>
 <script>
     var elements = document.getElementsByClassName("lightgallery");
     for(var i=0; i<elements.length; i++) {
