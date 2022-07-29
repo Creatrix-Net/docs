@@ -7,6 +7,9 @@ tags:
 
 {{bot_name}} is listed in the following botlists
 
+<script async="async" data-cfasync="false" src="//pl17523944.highperformancegate.com/86bde6f923ad7ce4a09df3fd7396a340/invoke.js"></script>
+<div id="container-86bde6f923ad7ce4a09df3fd7396a340"></div>
+
 
 <table>
 {% for i in botlists_data %}
@@ -34,14 +37,6 @@ tags:
 ***
 
 [![!Top.gg Widget](https://top.gg/api/widget/{{bot_discord_id}}.svg){ loading=lazy }](https://top.gg/bot/{{bot_discord_id}}){ target=_blank }
-
-***
-
-[![!Fateslist Widget](https://lynx.fateslist.xyz/widgets/{{bot_discord_id}}?target_type=bot&format=png){ loading=lazy }](https://fateslist.xyz/bot/{{bot_discord_id}}){ target=_blank } 
-
-***
-
-[![!Discord List Space Widget](https://api.discordlist.space/v2/bots/{{bot_discord_id}}/widget?background=7289DA&radius=6){ loading=lazy }](https://discordlist.space/bot/{{bot_discord_id}}){ target=_blank } 
 
 ***
 

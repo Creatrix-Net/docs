@@ -51,6 +51,10 @@ List of all `message commands` available in the bot.
     Now that you know the basics, it should be noted that...
     You do not type in the brackets!
 
+
+<div id="container-86bde6f923ad7ce4a09df3fd7396a340"></div>
+
+
 {% for i in commands %}
 ## {{i.name}}
 {% if i.description %}

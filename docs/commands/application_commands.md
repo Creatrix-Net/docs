@@ -9,6 +9,9 @@ tags:
 
 List of all `slash commands` and `context menu's` available in the bot.
 
+<script async="async" data-cfasync="false" src="//pl17523944.highperformancegate.com/86bde6f923ad7ce4a09df3fd7396a340/invoke.js"></script>
+<div id="container-86bde6f923ad7ce4a09df3fd7396a340"></div>
+
 {% for i in application_commands %}
 ## {{i.name|title}}
 

