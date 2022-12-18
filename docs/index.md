@@ -20,9 +20,6 @@ tags:
  [![Upvotes](https://top.gg/api/widget/upvotes/{{bot_discord_id}}.svg){ loading=lazy }](https://top.gg/bot/{{bot_discord_id}}){ target=_blank }
  [![Documentation Status](https://readthedocs.org/projects/minato-namikaze/badge/?version=latest){ loading=lazy }](https://minato-namikaze.readthedocs.io/en/latest/?badge=latest)
 
-<script async="async" data-cfasync="false" src="//pl17523944.highperformancegate.com/86bde6f923ad7ce4a09df3fd7396a340/invoke.js"></script>
-<div id="container-86bde6f923ad7ce4a09df3fd7396a340"></div>
-
 
 ![image](https://i.imgur.com/FzgLCHM.jpeg){ loading=lazy }
 
@@ -30,17 +27,14 @@ tags:
 
 ## About Me
 
+{{bot_name}}, the versatile Discord bot, handles everything from admin tasks to fun and games. It is a multi-purpose bot that can be used for various purposes like moderation, fun, utility, and much more. It is a bot that is designed to make your server more interactive and fun. It has a lot of features that can be used to make your server more engaging and fun. It is a bot that is designed to make your server more interactive and fun. It has a lot of features that can be used to make your server more engaging and fun.
+
 **{{bot_name}}** (**波風ミナト**, Namikaze Minato) was the **Fourth Hokage** (**四代目火影**, Yondaime Hokage, literally meaning: Fourth Fire Shadow) of Konohagakure. He was renowned all over the world as **Konoha's Yellow Flash** (**木ノ葉の黄色い閃光**, Konoha no Kiiroi Senkō, English TV: Yellow Flash of the Leaf). He died during the Nine-Tailed Demon Fox's Attack, sacrificing his life to seal a part of the Nine-Tails into his newborn son, Naruto Uzumaki.
 
 
 ## Get Started
 
 [Invite Now :fontawesome-solid-link:](https://discord.com/oauth2/authorize?client_id={{bot_discord_id}}&permissions=8&redirect_uri=https%3A%2F%2Fminatonamikaze-invites.herokuapp.com%2Finvite&scope=applications.commands%20bot&response_type=code&state=cube12345%3F%2FBot%20Website){ .md-button target=_blank } [Get Started :fontawesome-solid-circle-play:](commands/index.md){ .md-button }
-
-
-# Rules
-[Privacy Policy :material-shield-lock:](rules/privacy_policy.md){ .md-button }
-[Terms of Use :material-note-check:](rules/terms_of_use.md){ .md-button }
 
 
 <!-- # Support Us

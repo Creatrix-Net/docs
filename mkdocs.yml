@@ -30,6 +30,21 @@ theme:
         repo: fontawesome/brands/github
 
 plugins:
+    - privacy
+    - glightbox:
+       touchNavigation: true
+       loop: false
+       effect: zoom
+       slide_effect: slide
+       width: 100%
+       height: auto
+       zoomable: true
+       draggable: true
+       auto_caption: false
+       caption_position: bottom
+       background: white
+       shadow: true
+       manual: false
     - pdf-export:
         enabled_if_env: ENABLE_PDF_EXPORT
     - tags:
@@ -41,9 +56,7 @@ plugins:
           remove_comments: true
     - git-revision-date:
         enabled_if_env: CI
-    - search:
-        lang: en
-        prebuild_index: true
+    - search
     - git-revision-date-localized:
         type: date
         fallback_to_build_date: true
@@ -55,14 +68,17 @@ plugins:
         css_dir: css             
         javascript_dir: js       
         canonical_version: null
+    - social:
+      cards_layout_options:
+      background_color: blue # Change background color
     
 repo_url: https://github.com/The-4th-Hokage/yondaime-hokage
 edit_uri: https://github.com/The-4th-Hokage/The-4th-Hokage.github.io/tree/master/docs
-site_name: Minato Namikaze
-site_author: Miku Chan
+site_name: Minato Namikaze | Creative Net
+site_author: Dhruva Shaw
 repo_name: Source Code
 site_description: Konichiwa &#128075;, myself Minato Namikaze, Konohagakure Yondaime Hokage. I do every work of a Hokage in a swift and clean way &#9889;
-copyright: This is a fan-made bot and we are not associated with Tokyo TV Corporation :)
+copyright: This discord bot is made by Dhruva Shaw who is a part of Creative Net
 
 markdown_extensions:
   - tables
@@ -76,14 +92,11 @@ markdown_extensions:
       slugify: !!python/name:pymdownx.slugs.uslugify
       title: Category
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
       options:
         custom_icons:
           - overrides/.icons
-  - lightgallery:
-      show_description_in_lightgallery: true
-      show_description_as_inline_caption: true
 
 extra:
   bot_name: Minato Namikaze
@@ -95,6 +108,27 @@ extra:
   analytics:
     provider: google
     property: !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_TOKEN"]
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/The-4th-Hokage
@@ -140,9 +174,6 @@ nav:
     - Message Commands List: commands/message_commands.md
     - Application Commands List: commands/application_commands.md
   - Contributors: contributors.md
-  - Rules:
-    - Privacy Policy: rules/privacy_policy.md
-    - Terms of Use: rules/terms_of_use.md
   - Partners: partners.md
   - Listing: botlist.md
   - Discord Server: server.md
