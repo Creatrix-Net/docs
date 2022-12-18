@@ -20,9 +20,6 @@ tags:
  [![Upvotes](https://top.gg/api/widget/upvotes/{{bot_discord_id}}.svg){ loading=lazy }](https://top.gg/bot/{{bot_discord_id}}){ target=_blank }
  [![Documentation Status](https://readthedocs.org/projects/minato-namikaze/badge/?version=latest){ loading=lazy }](https://minato-namikaze.readthedocs.io/en/latest/?badge=latest)
 
-<script async="async" data-cfasync="false" src="//pl17523944.highperformancegate.com/86bde6f923ad7ce4a09df3fd7396a340/invoke.js"></script>
-<div id="container-86bde6f923ad7ce4a09df3fd7396a340"></div>
-
 
 ![image](https://i.imgur.com/FzgLCHM.jpeg){ loading=lazy }
 

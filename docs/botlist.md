@@ -7,9 +7,6 @@ tags:
 
 {{bot_name}} is listed in the following botlists
 
-<script async="async" data-cfasync="false" src="//pl17523944.highperformancegate.com/86bde6f923ad7ce4a09df3fd7396a340/invoke.js"></script>
-<div id="container-86bde6f923ad7ce4a09df3fd7396a340"></div>
-
 
 <table>
 {% for i in botlists_data %}
