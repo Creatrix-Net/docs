@@ -56,7 +56,8 @@ plugins:
           remove_comments: true
     - git-revision-date:
         enabled_if_env: CI
-    - search
+    - search:
+        separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
     - git-revision-date-localized:
         type: date
         fallback_to_build_date: true
@@ -69,8 +70,8 @@ plugins:
         javascript_dir: js       
         canonical_version: null
     - social:
-      cards_layout_options:
-      background_color: blue # Change background color
+        cards_layout_options:
+          background_color: blue # Change background color
     
 repo_url: https://github.com/The-4th-Hokage/yondaime-hokage
 edit_uri: https://github.com/The-4th-Hokage/The-4th-Hokage.github.io/tree/master/docs
