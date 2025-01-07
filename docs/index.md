@@ -21,6 +21,8 @@ tags:
  [![Documentation Status](https://readthedocs.org/projects/minato-namikaze/badge/?version=latest){ loading=lazy }](https://minato-namikaze.readthedocs.io/en/latest/?badge=latest)
 
 
+
+
 ![image](https://i.imgur.com/FzgLCHM.jpeg){ loading=lazy }
 
 ***
