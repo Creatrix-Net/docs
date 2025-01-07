@@ -30,7 +30,6 @@ theme:
         repo: fontawesome/brands/github
 
 plugins:
-    - privacy
     - glightbox:
        touchNavigation: true
        loop: false
@@ -90,11 +89,13 @@ markdown_extensions:
   - toc:
       permalink: true
       toc_depth : 2
-      slugify: !!python/name:pymdownx.slugs.uslugify
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
       title: Category
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
       options:
         custom_icons:
           - overrides/.icons
