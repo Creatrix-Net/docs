@@ -91,7 +91,7 @@ plugins:
 repo_url: https://github.com/The-4th-Hokage/yondaime-hokage
 edit_uri: https://github.com/The-4th-Hokage/The-4th-Hokage.github.io/tree/master/docs
 site_name: Minato Namikaze | Creative Net
-site_author: Dhruva Shaw
+site_author: Creatie Net
 repo_name: Source Code
 site_description: Konichiwa &#128075;, myself Minato Namikaze, Konohagakure Yondaime Hokage. I do every work of a Hokage in a swift and clean way &#9889;
 copyright: Copyright &copy; 2019 - 2025 Creative Net
@@ -125,7 +125,7 @@ extra:
       provider: mike
   analytics:
     provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
+    property: !ENV GOOGLE_ANALYTICS_TOKEN
     feedback:
       title: Was this page helpful?
       ratings:
