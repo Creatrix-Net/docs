@@ -1,31 +1,49 @@
 theme:
     name: material
-    color_theme: f79d00
     custom_dir: overrides
     language: en
     logo: assets/images/logo.png
     favicon: assets/images/favicon.ico
     palette:
-        - scheme: default
+        - media: "(prefers-color-scheme)"
+          accent: lime
+          primary: amber
+          toggle:
+            icon: material/brightness-auto
+            name: Switch to light mode
+        
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          accent: lime
+          primary: orange
           toggle:
             icon: material/eye
             name: Switch to dark mode
-        - scheme: slate
+        
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          accent: lime
+          primary: indigo
           toggle:
             icon: material/eye-outline
             name: Switch to light mode
     features:
+        - toc.follow
+        - toc.integrate
         - header.autohide
         - search.suggest
         - search.highlight
         - search.share
         - navigation.instant
+        - navigation.instant.progress
+        - navigation.instant.prefetch
         - navigation.tracking
         - navigation.tabs
         - navigation.expand
         - navigation.indexes
         - navigation.top
         - navigation.sections
+        - navigation.path
     icon:
         repo: fontawesome/brands/github
 
@@ -68,9 +86,7 @@ plugins:
         css_dir: css             
         javascript_dir: js       
         canonical_version: null
-    - social:
-        cards_layout_options:
-          background_color: blue # Change background color
+    - social
     
 repo_url: https://github.com/The-4th-Hokage/yondaime-hokage
 edit_uri: https://github.com/The-4th-Hokage/The-4th-Hokage.github.io/tree/master/docs
@@ -78,11 +94,10 @@ site_name: Minato Namikaze | Creative Net
 site_author: Dhruva Shaw
 repo_name: Source Code
 site_description: Konichiwa &#128075;, myself Minato Namikaze, Konohagakure Yondaime Hokage. I do every work of a Hokage in a swift and clean way &#9889;
-copyright: This discord bot is made by Dhruva Shaw who is a part of Creative Net
+copyright: Copyright &copy; 2019 - 2025 Creative Net
 
 markdown_extensions:
   - tables
-  - smarty
   - attr_list
   - pymdownx.snippets
   - md_in_html
@@ -102,6 +117,7 @@ markdown_extensions:
 
 extra:
   bot_name: Minato Namikaze
+  company_name: Creative Net
   bot_discord_id: 935242576343224352
   discord_invite_code: vfXHwS3nmQ
   site_keywords: Minato Namikaze, discord bot, minato, namikaze, discord.py,best discord bot, best anime bot, anime, bot, discord bot
@@ -109,7 +125,7 @@ extra:
       provider: mike
   analytics:
     provider: google
-    property: !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_TOKEN"]
+    property: !ENV GOOGLE_ANALYTICS_KEY
     feedback:
       title: Was this page helpful?
       ratings:
