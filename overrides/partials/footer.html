@@ -1,5 +1,14 @@
 {% import "partials/language.html" as lang with context %}
 <footer class="md-footer">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L6KK3PPNKM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L6KK3PPNKM');
+</script>
     {% if page.previous_page or page.next_page %}
     <nav class="md-footer__inner md-grid" aria-label="{{ lang.t('footer.title') }}">
         {% if page.previous_page %} {% set direction = lang.t("footer.previous") %}
